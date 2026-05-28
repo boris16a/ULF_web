@@ -2,205 +2,207 @@ export const siteContent = {
   brand: {
     name: "ULF",
     descriptor: "Centro de Entrenamiento Estructurado.",
-    preOpening: "ULF se encuentra en fase de pre-apertura.",
+    preOpening: "Pre-apertura ULF · Cupos limitados para Socios Fundadores",
     mainLogo: "/images/ULF_logo.png",
     docsLogo: "/images/ULF_logo_docs.png",
     heroVideo: "/images/ULF_animacion.mp4",
     heroFallback: "/images/hero-placeholder.png",
   },
   nav: [
+    { label: "Socios Fundadores", href: "#socios-fundadores" },
     { label: "Método", href: "#metodo" },
-    { label: "Experiencia", href: "#experiencia" },
     { label: "Formatos", href: "#formatos" },
-    { label: "Lista de espera", href: "#lista-espera" },
+    { label: "Postular", href: "#postular" },
   ],
   cta: {
-    primary: "Quiero recibir información de apertura",
-    secondary: "Unirme a la lista de espera",
+    primary: "Postular a Socio Fundador",
+    secondary: "Conocer el método",
+    tertiary: "Quiero ser parte de la primera generación ULF",
+    reserve: "Reservar cupo de pre-apertura",
   },
   hero: {
-    kicker: "Pre-apertura ULF",
-    title: "Entrena con método.\nProgresa con estructura.",
+    kicker: "Socios Fundadores ULF",
+    title: "Sé parte de la primera generación ULF.",
     subtitle:
-      "ULF es un Centro de Entrenamiento Estructurado diseñado para personas que buscan entrenar con seguimiento, corrección técnica y progresión medible, sin depender de la motivación del día.",
-    note: "Cupos limitados. Fase de pre-apertura.",
-    visualLabel: "Identidad ULF",
-    visualText:
-      "Evaluación, registro y progresión para sostener el proceso desde el primer día.",
-    metrics: ["Evaluación", "Registro", "Progresión"],
+      "Entrenamiento estructurado para personas que quieren volver a sentirse capaces, entrenar con seguimiento real y sostener el proceso sin depender de la motivación del día.",
+    note:
+      "Cupos limitados de pre-apertura. Acceso anticipado a horarios, condiciones fundadoras y Clase 0 inicial.",
+    metrics: ["Evaluación", "Corrección", "Seguimiento"],
+  },
+  founders: {
+    eyebrow: "Pre-apertura",
+    title: "Socios Fundadores ULF",
+    text:
+      "Estamos abriendo cupos para las primeras personas que quieran ingresar a ULF desde el inicio y construir su proceso bajo el método completo: evaluación, entrenamiento estructurado, registro y seguimiento.",
+    emphasis:
+      "Ser Socio Fundador no significa comprar una promoción. Significa entrar primero a un sistema diseñado para ayudarte a sostener el entrenamiento.",
+    benefits: [
+      "Acceso anticipado a horarios.",
+      "Prioridad para elegir formato SG, DUO o PT.",
+      "Clase 0 fundacional incluida.",
+      "Matrícula liberada o bonificada durante pre-apertura.",
+      "Condiciones especiales de lanzamiento por tiempo limitado.",
+      "Seguimiento inicial personalizado.",
+    ],
+    note:
+      "Los cupos fundadores serán limitados para proteger la calidad del sistema y la experiencia inicial.",
   },
   whatIs: {
-    eyebrow: "Qué es ULF",
-    title: "No es un gimnasio. Es un sistema.",
+    eyebrow: "Diferencia ULF",
+    title: "No vienes a entrenar al azar.",
     text:
-      "ULF nace para reordenar la forma en que las personas entrenan. No vendemos acceso a máquinas ni clases al azar. Diseñamos una experiencia completa: ingreso, evaluación, entrenamiento, registro, seguimiento y progresión.",
+      "En ULF cada persona entra con un punto de partida claro, una evaluación inicial y un proceso de entrenamiento estructurado. No pagas por acceso libre. Pagas por corrección, seguimiento y progreso documentado.",
     bullets: [
       "Evaluación inicial obligatoria.",
-      "Entrenamiento en grupos reducidos.",
-      "Corrección técnica constante.",
-      "Registro digital de progreso.",
-      "Seguimiento activo de asistencia y evolución.",
-      "Programación estructurada por ciclos.",
+      "Grupos reducidos.",
+      "Corrección técnica.",
+      "Registro por sesión.",
+      "Seguimiento de asistencia.",
+      "Progresión por ciclos.",
     ],
   },
   problem: {
     eyebrow: "El punto de quiebre",
-    title: "El problema no es solo entrenar. El problema es sostenerlo.",
+    title: "El problema no es empezar.\nEl problema es no volver a abandonar.",
     text:
-      "Muchas personas se inscriben en gimnasios, empiezan motivadas y abandonan a las pocas semanas. No porque no quieran mejorar, sino porque el sistema no las acompaña: no hay seguimiento, no hay corrección, no hay estructura y nadie detecta cuando se desconectan.",
+      "Ya existen gimnasios baratos, clases intensas y aplicaciones con rutinas. Pero si nadie mide tu progreso, nadie corrige tu técnica y nadie detecta cuando empiezas a faltar, el abandono vuelve a repetirse. ULF fue diseñado para intervenir ahí.",
     comparisons: [
       {
         title: "Gimnasio tradicional",
         items: [
-          "Acceso libre.",
-          "Poco seguimiento.",
-          "Alta dependencia de motivación.",
-          "Corrección limitada.",
-          "Abandono silencioso.",
+          "Pagas acceso.",
+          "Entrenas por tu cuenta.",
+          "Nadie mide tu progreso.",
+          "Si faltas, nadie lo nota.",
         ],
       },
       {
         title: "ULF",
         items: [
-          "Método estructurado.",
-          "Cupos controlados.",
-          "Evaluación inicial.",
-          "Registro por sesión.",
-          "Seguimiento activo.",
+          "Entras con evaluación.",
+          "Entrenas con método.",
+          "Se registra tu evolución.",
+          "Si te desconectas, el sistema interviene.",
         ],
       },
     ],
   },
   method: {
     eyebrow: "Método ULF",
-    title: "Un método para construir capacidad física real.",
+    title: "Método antes que intensidad.",
     text:
-      "El Método ULF no es una rutina genérica. Es una arquitectura de entrenamiento que organiza la experiencia completa del cliente: ingreso, progresión, seguimiento, permanencia y evolución medible en el tiempo.",
+      "ULF no busca agotarte. Busca que progreses con técnica, carga controlada y seguimiento.",
     cards: [
       {
-        title: "Evaluación inicial",
-        text:
-          "Antes de entrenar, entendemos tu estado técnico, historial, movilidad, capacidad inicial y objetivos.",
+        title: "Evaluar",
+        text: "Conocer tu punto de partida técnico.",
       },
       {
-        title: "Progresión estructurada",
-        text:
-          "El entrenamiento se organiza por ciclos mensuales, combinando técnica, progresión, intensificación controlada y descarga.",
+        title: "Entrenar",
+        text: "Progresar con estructura, no con improvisación.",
       },
       {
-        title: "Seguimiento documentado",
-        text:
-          "Cada sesión se registra. El progreso no se intuye: se observa, se mide y se revisa.",
+        title: "Registrar",
+        text: "Medir avances, asistencia y evolución.",
       },
     ],
   },
   formats: {
     eyebrow: "Formatos",
-    title: "Tres formatos. Un mismo método.",
+    title: "Elige el nivel de acompañamiento que necesitas.",
     text:
-      "ULF opera bajo un ecosistema de entrenamiento progresivo. Cada formato cumple un rol dentro del sistema.",
+      "ULF opera con tres formatos bajo un mismo método. La diferencia está en el nivel de acompañamiento que necesitas para iniciar y sostener tu proceso.",
     cards: [
       {
         title: "Small Group",
         tag: "SG",
+        highlight: "Recomendado para la mayoría de los Socios Fundadores.",
         text:
-          "Entrenamiento en grupos reducidos, con máximo 8 personas por bloque. Es la base estructural del sistema. Ideal para personas que buscan constancia, seguimiento y progresión en un entorno no masivo.",
+          "Grupos reducidos de hasta 8 personas. Ideal para construir constancia, fuerza y técnica en un entorno acompañado, sin sentirte perdido en una sala llena.",
       },
       {
         title: "DUO",
         tag: "Técnico",
         text:
-          "Formato intermedio para trabajo técnico más focalizado, readaptación, transición o ajustes específicos.",
+          "Entrenamiento para dos personas o trabajo técnico más focalizado. Ideal si necesitas más corrección, readaptación o una transición más personalizada.",
       },
       {
         title: "Personal Training",
         tag: "PT",
         text:
-          "Acompañamiento individual para objetivos complejos, necesidades específicas o personalización avanzada.",
+          "Acompañamiento individual para objetivos específicos, casos complejos o mayor personalización.",
       },
     ],
   },
   entry: {
-    eyebrow: "Experiencia de ingreso",
-    title: "No empiezas entrenando al azar.",
-    text:
-      "El ingreso a ULF está diseñado para que cada persona entienda cómo funciona el sistema antes de iniciar su proceso.",
+    eyebrow: "Cómo ingresar",
+    title: "Así se entra a ULF",
+    text: "Un ingreso simple, claro y pensado para ubicarte en el formato correcto.",
     steps: [
       {
-        title: "Clase experimental",
-        text: "Instancia breve para conocer el espacio, entender el método y resolver dudas.",
+        title: "Postulación",
+        text: "Dejas tus datos y nos cuentas qué estás buscando.",
       },
       {
         title: "Clase 0",
-        text:
-          "Evaluación fundacional obligatoria. Se revisan patrones básicos, estado técnico inicial y principales focos de trabajo.",
+        text: "Evaluamos tu punto de partida, historial, movilidad y estado técnico.",
       },
       {
-        title: "Día 1",
-        text:
-          "Inicio real del entrenamiento, con carga conservadora, corrección técnica y registro activo.",
+        title: "Inicio del proceso",
+        text: "Te integras al formato adecuado: SG, DUO o PT.",
       },
     ],
   },
   audience: {
     eyebrow: "Para quién es",
-    title: "ULF es para personas que buscan estructura, no improvisación.",
+    title: "ULF es para personas que quieren volver a sentirse capaces.",
     text:
-      "ULF está diseñado para personas que quieren entrenar de forma seria, sostenible y acompañada. No importa partir desde un nivel bajo. Lo importante es estar dispuesto a seguir un proceso.",
-    positiveTitle: "ULF es para ti si:",
+      "No necesitas estar en tu mejor estado físico para entrar. Necesitas estar dispuesto a seguir un proceso.",
+    positiveTitle: "ULF puede ser para ti si:",
     positive: [
-      "Quieres volver a sentirte capaz físicamente.",
-      "Has abandonado gimnasios antes.",
-      "Necesitas seguimiento para sostener la constancia.",
-      "Te importa entrenar con técnica.",
-      "Buscas fuerza, autonomía y salud a largo plazo.",
-      "Prefieres un ambiente ordenado, no masivo y no intimidante.",
+      "Has pagado gimnasios que terminaste abandonando.",
+      "Quieres entrenar, pero necesitas estructura.",
+      "Te importa la técnica y no quieres lesionarte.",
+      "Buscas fuerza, energía y autonomía.",
+      "Prefieres un ambiente reducido, ordenado y no intimidante.",
     ],
-    negativeTitle: "ULF no es para ti si:",
-    negative: [
-      "Buscas solo acceso libre a máquinas.",
-      "Quieres entrenar sin estructura.",
-      "Buscas resultados rápidos sin proceso.",
-      "Prefieres ambientes caóticos o competitivos.",
-      "No quieres recibir corrección técnica.",
-    ],
+    note:
+      "ULF no es open gym ni entrenamiento libre. Si buscas solo acceso a máquinas, probablemente este no es el sistema adecuado.",
   },
   waitlist: {
-    eyebrow: "Lista de espera",
-    title: "Estamos construyendo la primera comunidad ULF.",
+    eyebrow: "Postulación",
+    title: "Postula a Socio Fundador ULF",
     text:
-      "ULF se encuentra en fase de pre-apertura. Estamos levantando una lista de personas interesadas en recibir información anticipada sobre horarios, formatos, valores de lanzamiento y disponibilidad de cupos.",
+      "Déjanos tus datos y te contactaremos con la información de pre-apertura, horarios disponibles y condiciones fundadoras.",
     legal:
       "Te contactaremos solo con información relacionada a ULF. No enviaremos spam.",
     fields: {
       name: "Nombre",
-      email: "Email",
       whatsapp: "WhatsApp",
+      email: "Email",
       commune: "Comuna",
-      format: "¿Qué formato te interesa?",
-      goal: "¿Cuál es tu principal objetivo?",
+      schedule: "¿Qué horario te acomoda más?",
+      goal: "¿Qué buscas principalmente?",
+      founderInterest: "¿Te interesa postular como Socio Fundador?",
     },
-    formatOptions: [
-      "Small Group",
-      "DUO",
-      "Personal Training",
-      "No estoy seguro",
-    ],
+    scheduleOptions: ["Mañana", "Mediodía", "Tarde", "Noche"],
     goalOptions: [
       "Recuperar constancia",
       "Bajar grasa / recomposición corporal",
       "Ganar fuerza",
       "Entrenar sin lesionarme",
       "Mejorar energía y salud",
-      "Otro",
+      "No estoy seguro",
     ],
+    founderOptions: ["Sí", "Quiero más información primero"],
     success:
-      "Gracias. Tus datos quedaron registrados para esta simulación. El formulario queda listo para conectar luego con Google Forms, Airtable, Typeform, Supabase o CRM.",
+      "Gracias. Recibimos tu postulación simulada. El formulario queda listo para conectar luego con Google Forms, Airtable, Typeform, Supabase o CRM.",
   },
   closing: {
-    title: "No necesitas más motivación. Necesitas un sistema.",
+    title:
+      "No necesitas más motivación.\nNecesitas un sistema que te ayude a sostener el proceso.",
     text:
-      "ULF existe para integrar el entrenamiento como un pilar estructural de la vida. Fuerza, autonomía y longevidad no como metas estéticas, sino como consecuencias de un método sostenido.",
+      "ULF existe para que el entrenamiento deje de ser algo que empiezas y abandonas, y se convierta en una práctica estructural de tu vida.",
   },
 };
 

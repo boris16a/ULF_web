@@ -16,10 +16,10 @@ export default function Hero() {
             {siteContent.hero.subtitle}
           </p>
           <div className="mt-9 grid gap-3 sm:flex sm:flex-row">
-            <a href="#lista-espera" className="btn-primary w-full sm:w-auto">
+            <a href="#postular" className="btn-primary w-full sm:w-auto">
               {siteContent.cta.primary}
             </a>
-            <a href="#lista-espera" className="btn-secondary w-full sm:w-auto">
+            <a href="#metodo" className="btn-secondary w-full sm:w-auto">
               {siteContent.cta.secondary}
             </a>
           </div>

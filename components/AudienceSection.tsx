@@ -18,9 +18,14 @@ function ListBlock({ title, items }: { title: string; items: string[] }) {
 
 export default function AudienceSection() {
   return (
-    <div className="grid gap-4 lg:grid-cols-2">
+    <div className="grid gap-4 lg:grid-cols-[1.2fr_0.8fr]">
       <ListBlock title={siteContent.audience.positiveTitle} items={siteContent.audience.positive} />
-      <ListBlock title={siteContent.audience.negativeTitle} items={siteContent.audience.negative} />
+      <article className="surface-card p-6">
+        <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[#8e9b79]">
+          Nota
+        </p>
+        <p className="mt-4 leading-7 text-[#c7beb0]">{siteContent.audience.note}</p>
+      </article>
     </div>
   );
 }

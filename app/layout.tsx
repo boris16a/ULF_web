@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "ULF | Centro de Entrenamiento Estructurado",
+  title: "ULF | Socios Fundadores · Centro de Entrenamiento Estructurado",
   description:
-    "Entrenamiento con método, evaluación inicial, seguimiento digital y progresión estructurada. ULF no es un gimnasio tradicional. Es un sistema para entrenar mejor y sostener el proceso.",
+    "Postula a la primera generación de Socios Fundadores ULF. Entrenamiento estructurado con evaluación inicial, corrección técnica, seguimiento real y progresión medible.",
 };
 
 export default function RootLayout({

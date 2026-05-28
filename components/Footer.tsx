@@ -25,8 +25,8 @@ export default function Footer() {
           <a className="transition hover:text-[#f4efe5]" href="#formatos">
             Formatos
           </a>
-          <a className="transition hover:text-[#f4efe5]" href="#lista-espera">
-            Lista de espera
+          <a className="transition hover:text-[#f4efe5]" href="#postular">
+            Postular
           </a>
         </nav>
       </div>

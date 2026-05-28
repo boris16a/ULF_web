@@ -5,20 +5,22 @@ import { siteContent } from "@/data/siteContent";
 
 type FormState = {
   name: string;
-  email: string;
   whatsapp: string;
+  email: string;
   commune: string;
-  format: string;
+  schedule: string;
   goal: string;
+  founderInterest: string;
 };
 
 const initialState: FormState = {
   name: "",
-  email: "",
   whatsapp: "",
+  email: "",
   commune: "",
-  format: "",
+  schedule: "",
   goal: "",
+  founderInterest: "",
 };
 
 export default function WaitlistForm() {
@@ -38,7 +40,7 @@ export default function WaitlistForm() {
     const validEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(form.email);
 
     if (missing) {
-      setError("Completa todos los campos para sumarte a la lista.");
+      setError("Completa todos los campos para postular.");
       return;
     }
 
@@ -64,6 +66,15 @@ export default function WaitlistForm() {
             autoComplete="name"
           />
         </Field>
+        <Field label={siteContent.waitlist.fields.whatsapp}>
+          <input
+            className="field"
+            value={form.whatsapp}
+            onChange={(event) => updateField("whatsapp", event.target.value)}
+            placeholder="+56 9 ..."
+            autoComplete="tel"
+          />
+        </Field>
         <Field label={siteContent.waitlist.fields.email}>
           <input
             className="field"
@@ -72,15 +83,6 @@ export default function WaitlistForm() {
             onChange={(event) => updateField("email", event.target.value)}
             placeholder="correo@ejemplo.com"
             autoComplete="email"
-          />
-        </Field>
-        <Field label={siteContent.waitlist.fields.whatsapp}>
-          <input
-            className="field"
-            value={form.whatsapp}
-            onChange={(event) => updateField("whatsapp", event.target.value)}
-            placeholder="+56 9 ..."
-            autoComplete="tel"
           />
         </Field>
         <Field label={siteContent.waitlist.fields.commune}>
@@ -94,14 +96,14 @@ export default function WaitlistForm() {
         </Field>
       </div>
 
-      <Field label={siteContent.waitlist.fields.format}>
+      <Field label={siteContent.waitlist.fields.schedule}>
         <select
           className="field"
-          value={form.format}
-          onChange={(event) => updateField("format", event.target.value)}
+          value={form.schedule}
+          onChange={(event) => updateField("schedule", event.target.value)}
         >
           <option value="">Selecciona una opción</option>
-          {siteContent.waitlist.formatOptions.map((option) => (
+          {siteContent.waitlist.scheduleOptions.map((option) => (
             <option key={option} value={option}>
               {option}
             </option>
@@ -117,6 +119,21 @@ export default function WaitlistForm() {
         >
           <option value="">Selecciona una opción</option>
           {siteContent.waitlist.goalOptions.map((option) => (
+            <option key={option} value={option}>
+              {option}
+            </option>
+          ))}
+        </select>
+      </Field>
+
+      <Field label={siteContent.waitlist.fields.founderInterest}>
+        <select
+          className="field"
+          value={form.founderInterest}
+          onChange={(event) => updateField("founderInterest", event.target.value)}
+        >
+          <option value="">Selecciona una opción</option>
+          {siteContent.waitlist.founderOptions.map((option) => (
             <option key={option} value={option}>
               {option}
             </option>
