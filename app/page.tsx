@@ -233,12 +233,12 @@ export default function Home() {
           </div>
         </Section>
 
-        <section className="relative overflow-hidden border-y border-[#1d1b18]/10 bg-[#2a2823] py-16 text-[#fff7ea] sm:py-20">
+        <section className="relative overflow-hidden bg-transparent py-16 text-[#171614] sm:py-20">
           <div className="section-shell relative z-10 max-w-4xl">
             <h2 className="whitespace-pre-line text-4xl font-black leading-tight sm:text-5xl">
               {siteContent.closing.title}
             </h2>
-            <p className="mt-6 max-w-3xl text-lg leading-8 text-[#d8ccbb]">
+            <p className="mt-6 max-w-3xl text-lg leading-8 text-[#4e473e]">
               {siteContent.closing.text}
             </p>
             <a href="#postular" className="btn-primary mt-8">

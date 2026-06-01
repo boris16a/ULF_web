@@ -41,12 +41,12 @@ body::before {
   inset: 0;
   z-index: 0;
   pointer-events: none;
-  background-image: url("/images/ULF_logo.png");
-  background-position: center 48%;
+  background-image: url("/images/ULF_logo2.png");
+  background-position: center 46%;
   background-repeat: no-repeat;
-  background-size: min(78vw, 880px);
+  background-size: min(92vw, 1040px);
   filter: grayscale(1);
-  opacity: 0.035;
+  opacity: 0.055;
 }
 
 header,

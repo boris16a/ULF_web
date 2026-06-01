@@ -3,8 +3,8 @@ import { siteContent } from "@/data/siteContent";
 
 export default function Header() {
   return (
-    <header className="sticky top-0 z-50 border-b border-[#1d1b18]/10 bg-[#f7efe1]/92 backdrop-blur-xl">
-      <div className="border-b border-[#1d1b18]/10 bg-[#201e1a] py-3 sm:py-3.5">
+    <header className="sticky top-0 z-50 bg-[#f7efe1]/92 backdrop-blur-xl">
+      <div className="bg-[#201e1a] py-3 sm:py-3.5">
         <div className="section-shell text-center text-xs font-semibold uppercase tracking-[0.18em] text-[#e8dccb] sm:text-[13px]">
           {siteContent.brand.preOpening}
         </div>
@@ -45,7 +45,7 @@ export default function Header() {
           <span className="hidden sm:inline">{siteContent.cta.primary}</span>
         </a>
       </div>
-      <nav className="section-shell flex gap-5 overflow-x-auto border-t border-[#1d1b18]/10 py-3 lg:hidden">
+      <nav className="section-shell flex gap-5 overflow-x-auto py-3 lg:hidden">
         {siteContent.nav.map((item) => (
           <a
             className="shrink-0 text-sm font-medium text-[#4e473e]"

@@ -25,12 +25,12 @@ export const siteContent = {
     reserve: "Reservar cupo de pre-apertura",
   },
   hero: {
-    kicker: "Socios Fundadores ULF",
+    kicker: "SOCIOS FUNDADORES ULF",
     title: "Sé parte de la primera generación ULF.",
     subtitle:
-      "Accede antes que la apertura general a cupos limitados, prioridad de horarios, matrícula $0 y beneficios exclusivos para Socios Fundadores.",
+      "Postula como Socio Fundador y accede a beneficios especiales de pre-apertura: prioridad de horarios, condición fundador, pack de bienvenida y acceso anticipado a la primera manada ULF.",
     primaryMicrocopy:
-      "Primera generación limitada a 65 Socios Fundadores.\nLos cupos se asignarán por orden de postulación y compatibilidad de horario.",
+      "Primera generación limitada a 65 Socios Fundadores.\nLos cupos se asignarán por orden de postulación.",
     secondaryMicrocopy: "Conoce los beneficios de Socios Fundadores.",
     note:
       "Cupos limitados de pre-apertura. Acceso anticipado a horarios, condiciones fundadoras y Clase 0 inicial.",

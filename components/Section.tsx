@@ -13,15 +13,9 @@ export default function Section({
   title,
   text,
   children,
-  tone = "default",
 }: SectionProps) {
   return (
-    <section
-      id={id}
-      className={`border-t border-[#1d1b18]/10 py-16 sm:py-20 lg:py-24 ${
-        tone === "muted" ? "bg-[#e6dccd]" : "bg-transparent"
-      }`}
-    >
+    <section id={id} className="bg-transparent py-16 sm:py-20 lg:py-24">
       <div className="section-shell">
         <div className="max-w-3xl">
           {eyebrow ? (
