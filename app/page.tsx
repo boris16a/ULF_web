@@ -5,7 +5,6 @@ import FormatCards from "@/components/FormatCards";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import Image from "next/image";
-import type { CSSProperties } from "react";
 import MethodCards from "@/components/MethodCards";
 import Section from "@/components/Section";
 import WaitlistForm from "@/components/WaitlistForm";
@@ -26,25 +25,36 @@ function BulletGrid({ items }: { items: string[] }) {
 
 function ComparisonBlocks() {
   return (
-    <div className="grid gap-4 lg:grid-cols-2">
-      {siteContent.problem.comparisons.map((block, index) => (
-        <article
-          className={`surface-card p-6 ${
-            index === 0 ? "text-[#4e473e]" : "bg-[#2a2823] text-[#fff7ea]"
-          }`}
-          key={block.title}
-        >
-          <h3 className="text-2xl font-semibold">{block.title}</h3>
-          <ul className="mt-5 space-y-3">
-            {block.items.map((item) => (
-              <li className="flex gap-3" key={item}>
-                <span className="mt-2 h-1.5 w-1.5 shrink-0 bg-[#6d775c]" />
-                <span>{item}</span>
-              </li>
-            ))}
-          </ul>
-        </article>
-      ))}
+    <div className="grid gap-4 lg:grid-cols-[0.86fr_1.14fr] lg:items-stretch">
+      <article className="surface-card p-6 text-[#4e473e]">
+        <h3 className="text-xl font-semibold text-[#171614]">
+          {siteContent.problem.comparisons[0].title}
+        </h3>
+        <ul className="mt-5 space-y-3">
+          {siteContent.problem.comparisons[0].items.map((item) => (
+            <li className="flex gap-3" key={item}>
+              <span className="mt-2 h-1.5 w-1.5 shrink-0 bg-[#a88a67]" />
+              <span>{item}</span>
+            </li>
+          ))}
+        </ul>
+      </article>
+      <article className="surface-card border-[#3f513f]/25 bg-[#f8f0e3] p-8 text-[#2f302a]">
+        <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[#3f513f]">
+          Sistema ULF
+        </p>
+        <h3 className="mt-3 text-3xl font-black text-[#171614]">
+          {siteContent.problem.comparisons[1].title}
+        </h3>
+        <ul className="mt-6 space-y-4">
+          {siteContent.problem.comparisons[1].items.map((item) => (
+            <li className="flex gap-3 text-lg" key={item}>
+              <span className="mt-2.5 h-2 w-2 shrink-0 bg-[#3f513f]" />
+              <span>{item}</span>
+            </li>
+          ))}
+        </ul>
+      </article>
     </div>
   );
 }
@@ -58,20 +68,24 @@ function FounderSection() {
       text={siteContent.founders.text}
     >
       <div className="grid gap-6 lg:grid-cols-[0.88fr_1.12fr] lg:items-start">
-        <div
-          className="equipment-surface min-h-[390px] p-6"
-          style={{ "--equipment-image": `url(${siteContent.brand.communityImage})` } as CSSProperties}
-        >
-          <div className="relative z-10 flex h-full flex-col justify-end">
-            <p className="text-2xl font-semibold leading-tight text-[#fff7ea]">
+        <div className="image-panel aspect-[4/3] lg:aspect-auto lg:min-h-[520px]">
+          <Image
+            src={siteContent.brand.communityImage}
+            alt="Entrenamiento acompañado en grupos reducidos ULF"
+            fill
+            sizes="(min-width: 1024px) 42vw, 100vw"
+            className="object-cover"
+          />
+        </div>
+        <div className="grid content-start gap-5">
+          <article className="surface-card p-6">
+            <p className="text-xl font-semibold leading-8 text-[#201e1a]">
               {siteContent.founders.emphasis}
             </p>
-            <a href="#postular" className="btn-primary mt-7">
+            <a href="#postular" className="btn-primary mt-6">
               Quiero postular a Socio Fundador
             </a>
-          </div>
-        </div>
-        <div>
+          </article>
           <BulletGrid items={siteContent.founders.benefits} />
           <p className="mt-5 text-sm leading-6 text-[#a9a193]">
             {siteContent.founders.note}
@@ -89,16 +103,8 @@ function WolfSection() {
       eyebrow={siteContent.wolf.eyebrow}
       title={siteContent.wolf.title}
       text={siteContent.wolf.text}
-    >
+      >
       <div className="surface-card relative grid gap-6 overflow-hidden p-7 sm:p-9 lg:grid-cols-[0.7fr_1.3fr] lg:items-center">
-        <Image
-          src={siteContent.brand.mainLogo}
-          alt=""
-          width={520}
-          height={520}
-          className="watermark-logo bottom-[-180px] right-[-110px] w-[420px]"
-          aria-hidden="true"
-        />
         <div className="relative z-10 flex min-h-[220px] items-center justify-center">
           <Image
             src={siteContent.brand.mainLogo}
@@ -142,19 +148,15 @@ export default function Home() {
           text={siteContent.problem.text}
           tone="muted"
         >
-          <div className="grid gap-6 lg:grid-cols-[0.95fr_1.05fr] lg:items-stretch">
-            <div
-              className="equipment-surface min-h-[330px] p-6"
-              style={{ "--equipment-image": `url(${siteContent.brand.consistencyImage})` } as CSSProperties}
-            >
-              <div className="relative z-10 flex h-full flex-col justify-end">
-                <p className="text-xs font-semibold uppercase tracking-[0.24em] text-[#e8dccb]">
-                  Constancia
-                </p>
-                <p className="mt-4 max-w-md text-2xl font-semibold leading-tight text-[#fff7ea]">
-                  El sistema existe para detectar el abandono antes de que se repita.
-                </p>
-              </div>
+          <div className="grid gap-6">
+            <div className="image-panel aspect-[16/7]">
+              <Image
+                src={siteContent.brand.consistencyImage}
+                alt="Persona retomando su constancia de entrenamiento en un espacio ULF"
+                fill
+                sizes="(min-width: 1180px) 1180px, 100vw"
+                className="object-cover"
+              />
             </div>
             <ComparisonBlocks />
           </div>
@@ -205,18 +207,24 @@ export default function Home() {
           tone="muted"
         >
           <div className="grid gap-8 lg:grid-cols-[0.72fr_1.28fr] lg:items-start">
-            <div
-              className="equipment-surface min-h-[360px] p-6"
-              style={{ "--equipment-image": `url(${siteContent.brand.heroImage})` } as CSSProperties}
-            >
-              <div className="relative z-10">
-                <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[#8e9b79]">
+            <div className="grid gap-5">
+              <div className="image-panel aspect-[4/3]">
+                <Image
+                  src={siteContent.brand.heroImage}
+                  alt="Espacio ULF preparado para la primera generación de Socios Fundadores"
+                  fill
+                  sizes="(min-width: 1024px) 34vw, 100vw"
+                  className="object-cover"
+                />
+              </div>
+              <div className="surface-card p-6">
+                <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[#3f513f]">
                   Socios Fundadores
                 </p>
-                <p className="mt-5 text-2xl font-semibold leading-tight text-[#fff7ea]">
+                <p className="mt-5 text-2xl font-semibold leading-tight text-[#201e1a]">
                   Accede primero a información de pre-apertura, horarios disponibles y condiciones fundadoras.
                 </p>
-                <p className="mt-5 leading-8 text-[#eadfce]">
+                <p className="mt-5 leading-8 text-[#4e473e]">
                   Recibirás información prioritaria sobre horarios, formatos disponibles y condiciones fundadoras antes de la apertura general.
                 </p>
               </div>
@@ -226,14 +234,6 @@ export default function Home() {
         </Section>
 
         <section className="relative overflow-hidden border-y border-[#1d1b18]/10 bg-[#2a2823] py-16 text-[#fff7ea] sm:py-20">
-          <Image
-            src={siteContent.brand.mainLogo}
-            alt=""
-            width={620}
-            height={620}
-            className="watermark-logo left-[-180px] top-[-140px] w-[500px] opacity-[0.07]"
-            aria-hidden="true"
-          />
           <div className="section-shell relative z-10 max-w-4xl">
             <h2 className="whitespace-pre-line text-4xl font-black leading-tight sm:text-5xl">
               {siteContent.closing.title}
