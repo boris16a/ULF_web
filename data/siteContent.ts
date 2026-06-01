@@ -6,10 +6,13 @@ export const siteContent = {
     mainLogo: "/images/ULF_logo.png",
     docsLogo: "/images/ULF_logo_docs.png",
     heroVideo: "/images/ULF_animacion.mp4",
-    heroFallback: "/images/hero-placeholder.png",
+    heroImage: "/images/Hero.png",
+    communityImage: "/images/Comunidad.png",
+    consistencyImage: "/images/constancia.png",
   },
   nav: [
     { label: "Socios Fundadores", href: "#socios-fundadores" },
+    { label: "Qué es ULF", href: "#que-es" },
     { label: "Método", href: "#metodo" },
     { label: "Formatos", href: "#formatos" },
     { label: "Postular", href: "#postular" },
@@ -24,34 +27,35 @@ export const siteContent = {
     kicker: "Socios Fundadores ULF",
     title: "Sé parte de la primera generación ULF.",
     subtitle:
-      "Entrenamiento estructurado para personas que quieren volver a sentirse capaces, entrenar con seguimiento real y sostener el proceso sin depender de la motivación del día.",
+      "Entrenamiento estructurado para personas que quieren recuperar fuerza, energía y constancia con un sistema de seguimiento real.",
     note:
-      "Cupos limitados de pre-apertura. Acceso anticipado a horarios, condiciones fundadoras y Clase 0 inicial.",
+      "Cupos limitados de pre-apertura. Acceso anticipado a horarios, Clase 0 y condiciones fundadoras.",
     metrics: ["Evaluación", "Corrección", "Seguimiento"],
   },
   founders: {
     eyebrow: "Pre-apertura",
     title: "Socios Fundadores ULF",
     text:
-      "Estamos abriendo cupos para las primeras personas que quieran ingresar a ULF desde el inicio y construir su proceso bajo el método completo: evaluación, entrenamiento estructurado, registro y seguimiento.",
+      "Estamos abriendo los primeros cupos para quienes quieran entrar a ULF desde el inicio y construir su proceso bajo el método completo.",
     emphasis:
-      "Ser Socio Fundador no significa comprar una promoción. Significa entrar primero a un sistema diseñado para ayudarte a sostener el entrenamiento.",
+      "Ser Socio Fundador no es comprar una promoción. Es apostar temprano por un sistema diseñado para ayudarte a sostener el entrenamiento.",
     benefits: [
-      "Acceso anticipado a horarios.",
-      "Prioridad para elegir formato SG, DUO o PT.",
-      "Clase 0 fundacional incluida.",
-      "Matrícula liberada o bonificada durante pre-apertura.",
-      "Condiciones especiales de lanzamiento por tiempo limitado.",
+      "Prioridad para elegir horarios.",
+      "Clase 0 incluida.",
+      "Matrícula liberada en fase de pre-apertura.",
+      "Condiciones especiales de lanzamiento.",
+      "Acceso anticipado a cupos SG, DUO y PT.",
       "Seguimiento inicial personalizado.",
+      "Pertenecer a la primera generación ULF.",
     ],
     note:
       "Los cupos fundadores serán limitados para proteger la calidad del sistema y la experiencia inicial.",
   },
   whatIs: {
     eyebrow: "Diferencia ULF",
-    title: "No vienes a entrenar al azar.",
+    title: "No es un gimnasio tradicional. Es un Centro de Entrenamiento Estructurado.",
     text:
-      "En ULF cada persona entra con un punto de partida claro, una evaluación inicial y un proceso de entrenamiento estructurado. No pagas por acceso libre. Pagas por corrección, seguimiento y progreso documentado.",
+      "ULF es un sistema diseñado para que el entrenamiento deje de depender de la motivación y empiece a sostenerse con método, seguimiento y progresión. No vendemos acceso libre, intensidad vacía ni una transformación rápida. ULF construye capacidad física estructurada.",
     bullets: [
       "Evaluación inicial obligatoria.",
       "Grupos reducidos.",
@@ -61,11 +65,19 @@ export const siteContent = {
       "Progresión por ciclos.",
     ],
   },
+  wolf: {
+    eyebrow: "Identidad",
+    title: "¿Por qué un lobo?",
+    text:
+      "El lobo representa dirección, pertenencia y adaptación. No por agresividad, sino por estructura. En ULF, el lobo no compite por ego: avanza con método, se adapta al entorno y progresa dentro de un sistema.",
+    closing:
+      "No se trata de entrenar más fuerte que otros. Se trata de construir una versión más capaz de ti mismo.",
+  },
   problem: {
     eyebrow: "El punto de quiebre",
-    title: "El problema no es empezar.\nEl problema es no volver a abandonar.",
+    title: "El problema no es empezar.\nEs sostenerlo.",
     text:
-      "Ya existen gimnasios baratos, clases intensas y aplicaciones con rutinas. Pero si nadie mide tu progreso, nadie corrige tu técnica y nadie detecta cuando empiezas a faltar, el abandono vuelve a repetirse. ULF fue diseñado para intervenir ahí.",
+      "Muchas personas ya intentaron entrenar. Se inscribieron, partieron motivadas y abandonaron. No porque no quieran mejorar, sino porque nadie midió su progreso, nadie corrigió su técnica y nadie detectó cuando empezaron a faltar. ULF fue diseñado para intervenir ahí.",
     comparisons: [
       {
         title: "Gimnasio tradicional",
@@ -89,21 +101,21 @@ export const siteContent = {
   },
   method: {
     eyebrow: "Método ULF",
-    title: "Método antes que intensidad.",
+    title: "Método simple. Seguimiento real.",
     text:
-      "ULF no busca agotarte. Busca que progreses con técnica, carga controlada y seguimiento.",
+      "En ULF no entrenas al azar. Lo importante es que cada sesión tenga dirección, registro y continuidad.",
     cards: [
       {
-        title: "Evaluar",
-        text: "Conocer tu punto de partida técnico.",
+        title: "Evaluamos",
+        text: "Conocemos tu punto de partida técnico, tu historial y tus objetivos.",
       },
       {
-        title: "Entrenar",
-        text: "Progresar con estructura, no con improvisación.",
+        title: "Entrenamos",
+        text: "Te integras al formato adecuado: SG, DUO o PT.",
       },
       {
-        title: "Registrar",
-        text: "Medir avances, asistencia y evolución.",
+        title: "Seguimos",
+        text: "Registramos tu progreso, tu asistencia y tus focos de mejora.",
       },
     ],
   },

@@ -143,7 +143,7 @@ export default function WaitlistForm() {
 
       {error ? <p className="text-sm font-medium text-[#f1b8a8]">{error}</p> : null}
       {success ? (
-        <p className="border border-[#8e9b79]/40 bg-[#8e9b79]/10 p-4 text-sm leading-6 text-[#e9e2d4]">
+        <p className="border border-[#3f513f]/30 bg-[#3f513f]/10 p-4 text-sm leading-6 text-[#2f402f]">
           {siteContent.waitlist.success}
         </p>
       ) : null}
@@ -151,14 +151,14 @@ export default function WaitlistForm() {
       <button className="btn-primary w-full" type="submit">
         {siteContent.cta.primary}
       </button>
-      <p className="text-xs leading-5 text-[#a9a193]">{siteContent.waitlist.legal}</p>
+      <p className="text-xs leading-5 text-[#6f675d]">{siteContent.waitlist.legal}</p>
     </form>
   );
 }
 
 function Field({ label, children }: { label: string; children: React.ReactNode }) {
   return (
-    <label className="grid gap-2 text-sm font-semibold text-[#f4efe5]">
+    <label className="grid gap-2 text-sm font-semibold text-[#171614]">
       <span>{label}</span>
       {children}
     </label>

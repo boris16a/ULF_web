@@ -18,22 +18,22 @@ export default function Section({
   return (
     <section
       id={id}
-      className={`border-t border-white/[0.06] py-16 sm:py-20 lg:py-24 ${
-        tone === "muted" ? "bg-[#111412]" : "bg-transparent"
+      className={`border-t border-[#1d1b18]/10 py-16 sm:py-20 lg:py-24 ${
+        tone === "muted" ? "bg-[#e6dccd]" : "bg-transparent"
       }`}
     >
       <div className="section-shell">
         <div className="max-w-3xl">
           {eyebrow ? (
-            <p className="mb-4 text-xs font-semibold uppercase tracking-[0.24em] text-[#8e9b79]">
+            <p className="mb-4 text-xs font-semibold uppercase tracking-[0.24em] text-[#3f513f]">
               {eyebrow}
             </p>
           ) : null}
-          <h2 className="text-3xl font-semibold leading-tight text-[#f4efe5] sm:text-4xl lg:text-5xl">
+          <h2 className="whitespace-pre-line text-3xl font-semibold leading-tight text-[#171614] sm:text-4xl lg:text-5xl">
             {title}
           </h2>
           {text ? (
-            <p className="mt-5 text-base leading-8 text-[#c7beb0] sm:text-lg">
+            <p className="mt-5 text-base leading-8 text-[#4e473e] sm:text-lg">
               {text}
             </p>
           ) : null}

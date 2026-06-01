@@ -19,6 +19,12 @@ export default function Footer() {
           <p className="mt-3 text-xs text-[#837b70]">{siteContent.brand.preOpening}</p>
         </div>
         <nav className="flex flex-wrap gap-5 text-sm text-[#c7beb0]" aria-label="Footer">
+          <a className="transition hover:text-[#f4efe5]" href="#socios-fundadores">
+            Socios Fundadores
+          </a>
+          <a className="transition hover:text-[#f4efe5]" href="#que-es">
+            Qué es ULF
+          </a>
           <a className="transition hover:text-[#f4efe5]" href="#metodo">
             Método
           </a>

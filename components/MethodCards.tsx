@@ -8,11 +8,11 @@ export default function MethodCards() {
           className="surface-card p-6"
           key={card.title}
         >
-          <span className="text-sm font-bold text-[#8e9b79]">
+          <span className="text-sm font-bold text-[#3f513f]">
             0{index + 1}
           </span>
-          <h3 className="mt-5 text-xl font-semibold text-[#f4efe5]">{card.title}</h3>
-          <p className="mt-4 leading-7 text-[#c7beb0]">{card.text}</p>
+          <h3 className="mt-5 text-xl font-semibold text-[#171614]">{card.title}</h3>
+          <p className="mt-4 leading-7 text-[#4e473e]">{card.text}</p>
         </article>
       ))}
     </div>

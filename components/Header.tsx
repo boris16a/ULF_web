@@ -3,9 +3,9 @@ import { siteContent } from "@/data/siteContent";
 
 export default function Header() {
   return (
-    <header className="sticky top-0 z-50 border-b border-white/10 bg-[#0b0d0c]/92 backdrop-blur-xl">
-      <div className="border-b border-white/[0.07] bg-[#111412] py-2">
-        <div className="section-shell text-center text-[11px] font-semibold uppercase tracking-[0.18em] text-[#cdd7b6] sm:text-xs">
+    <header className="sticky top-0 z-50 border-b border-[#1d1b18]/10 bg-[#f7efe1]/92 backdrop-blur-xl">
+      <div className="border-b border-[#1d1b18]/10 bg-[#201e1a] py-2">
+        <div className="section-shell text-center text-[11px] font-semibold uppercase tracking-[0.18em] text-[#e8dccb] sm:text-xs">
           {siteContent.brand.preOpening}
         </div>
       </div>
@@ -22,10 +22,10 @@ export default function Header() {
             />
           </span>
           <span className="hidden min-w-0 sm:block">
-            <span className="block text-[11px] font-semibold uppercase tracking-[0.22em] text-[#8e9b79]">
+            <span className="block text-[11px] font-semibold uppercase tracking-[0.22em] text-[#3f513f]">
               {siteContent.brand.name}
             </span>
-            <span className="mt-1 block max-w-[210px] text-xs leading-5 text-[#9f978a]">
+            <span className="mt-1 block max-w-[210px] text-xs leading-5 text-[#6f675d]">
               {siteContent.brand.descriptor}
             </span>
           </span>
@@ -34,7 +34,7 @@ export default function Header() {
         <nav className="hidden items-center gap-8 lg:flex" aria-label="Navegación principal">
           {siteContent.nav.map((item) => (
             <a
-              className="text-sm font-medium text-[#cfc6b8] transition hover:text-[#f4efe5]"
+              className="text-sm font-medium text-[#3b3730] transition hover:text-[#11100e]"
               href={item.href}
               key={item.href}
             >
@@ -48,10 +48,10 @@ export default function Header() {
           <span className="hidden sm:inline">{siteContent.cta.primary}</span>
         </a>
       </div>
-      <nav className="section-shell flex gap-5 overflow-x-auto border-t border-white/10 py-3 lg:hidden">
+      <nav className="section-shell flex gap-5 overflow-x-auto border-t border-[#1d1b18]/10 py-3 lg:hidden">
         {siteContent.nav.map((item) => (
           <a
-            className="shrink-0 text-sm font-medium text-[#c7beb0]"
+            className="shrink-0 text-sm font-medium text-[#4e473e]"
             href={item.href}
             key={item.href}
           >

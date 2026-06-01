@@ -4,6 +4,8 @@ import Footer from "@/components/Footer";
 import FormatCards from "@/components/FormatCards";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
+import Image from "next/image";
+import type { CSSProperties } from "react";
 import MethodCards from "@/components/MethodCards";
 import Section from "@/components/Section";
 import WaitlistForm from "@/components/WaitlistForm";
@@ -13,7 +15,7 @@ function BulletGrid({ items }: { items: string[] }) {
   return (
     <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
       {items.map((item) => (
-        <div className="surface-card p-4 text-[#d7d0c4]" key={item}>
+        <div className="surface-card p-4 text-[#3f3a33]" key={item}>
           <span className="mr-3 inline-block h-1.5 w-1.5 bg-[#8e9b79] align-middle" />
           <span>{item}</span>
         </div>
@@ -28,7 +30,7 @@ function ComparisonBlocks() {
       {siteContent.problem.comparisons.map((block, index) => (
         <article
           className={`surface-card p-6 ${
-            index === 0 ? "text-[#d7d0c4]" : "bg-[#172018] text-[#f4efe5]"
+            index === 0 ? "text-[#4e473e]" : "bg-[#201e1a] text-[#fff7ea]"
           }`}
           key={block.title}
         >
@@ -36,7 +38,7 @@ function ComparisonBlocks() {
           <ul className="mt-5 space-y-3">
             {block.items.map((item) => (
               <li className="flex gap-3" key={item}>
-                <span className="mt-2 h-1.5 w-1.5 shrink-0 bg-[#8e9b79]" />
+                <span className="mt-2 h-1.5 w-1.5 shrink-0 bg-[#6d775c]" />
                 <span>{item}</span>
               </li>
             ))}
@@ -56,9 +58,12 @@ function FounderSection() {
       text={siteContent.founders.text}
     >
       <div className="grid gap-6 lg:grid-cols-[0.88fr_1.12fr] lg:items-start">
-        <div className="equipment-surface min-h-[360px] p-6">
+        <div
+          className="equipment-surface min-h-[390px] p-6"
+          style={{ "--equipment-image": `url(${siteContent.brand.communityImage})` } as CSSProperties}
+        >
           <div className="relative z-10 flex h-full flex-col justify-end">
-            <p className="text-2xl font-semibold leading-tight text-[#f4efe5]">
+            <p className="text-2xl font-semibold leading-tight text-[#fff7ea]">
               {siteContent.founders.emphasis}
             </p>
             <a href="#postular" className="btn-primary mt-7">
@@ -77,6 +82,31 @@ function FounderSection() {
   );
 }
 
+function WolfSection() {
+  return (
+    <Section
+      eyebrow={siteContent.wolf.eyebrow}
+      title={siteContent.wolf.title}
+      text={siteContent.wolf.text}
+      tone="muted"
+    >
+      <div className="surface-card relative overflow-hidden p-7 sm:p-9">
+        <Image
+          src={siteContent.brand.mainLogo}
+          alt=""
+          width={520}
+          height={520}
+          className="watermark-logo bottom-[-180px] right-[-110px] w-[420px]"
+          aria-hidden="true"
+        />
+        <p className="relative z-10 max-w-3xl text-2xl font-semibold leading-tight text-[#201e1a]">
+          {siteContent.wolf.closing}
+        </p>
+      </div>
+    </Section>
+  );
+}
+
 export default function Home() {
   return (
     <>
@@ -86,20 +116,38 @@ export default function Home() {
         <FounderSection />
 
         <Section
-          eyebrow={siteContent.problem.eyebrow}
-          title={siteContent.problem.title}
-          text={siteContent.problem.text}
-          tone="muted"
-        >
-          <ComparisonBlocks />
-        </Section>
-
-        <Section
+          id="que-es"
           eyebrow={siteContent.whatIs.eyebrow}
           title={siteContent.whatIs.title}
           text={siteContent.whatIs.text}
         >
           <BulletGrid items={siteContent.whatIs.bullets} />
+        </Section>
+
+        <WolfSection />
+
+        <Section
+          eyebrow={siteContent.problem.eyebrow}
+          title={siteContent.problem.title}
+          text={siteContent.problem.text}
+          tone="muted"
+        >
+          <div className="grid gap-6 lg:grid-cols-[0.95fr_1.05fr] lg:items-stretch">
+            <div
+              className="equipment-surface min-h-[330px] p-6"
+              style={{ "--equipment-image": `url(${siteContent.brand.consistencyImage})` } as CSSProperties}
+            >
+              <div className="relative z-10 flex h-full flex-col justify-end">
+                <p className="text-xs font-semibold uppercase tracking-[0.24em] text-[#e8dccb]">
+                  Constancia
+                </p>
+                <p className="mt-4 max-w-md text-2xl font-semibold leading-tight text-[#fff7ea]">
+                  El sistema existe para detectar el abandono antes de que se repita.
+                </p>
+              </div>
+            </div>
+            <ComparisonBlocks />
+          </div>
         </Section>
 
         <Section
@@ -147,15 +195,18 @@ export default function Home() {
           tone="muted"
         >
           <div className="grid gap-8 lg:grid-cols-[0.72fr_1.28fr] lg:items-start">
-            <div className="equipment-surface min-h-[360px] p-6">
+            <div
+              className="equipment-surface min-h-[360px] p-6"
+              style={{ "--equipment-image": `url(${siteContent.brand.heroImage})` } as CSSProperties}
+            >
               <div className="relative z-10">
                 <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[#8e9b79]">
                   Socios Fundadores
                 </p>
-                <p className="mt-5 text-2xl font-semibold leading-tight text-[#f4efe5]">
+                <p className="mt-5 text-2xl font-semibold leading-tight text-[#fff7ea]">
                   Accede primero a información de pre-apertura, horarios disponibles y condiciones fundadoras.
                 </p>
-                <p className="mt-5 leading-8 text-[#c7beb0]">
+                <p className="mt-5 leading-8 text-[#eadfce]">
                   Sin valores inventados ni promesas cerradas. Te contactaremos con la información real cuando esté disponible.
                 </p>
               </div>
@@ -164,12 +215,20 @@ export default function Home() {
           </div>
         </Section>
 
-        <section className="border-y border-white/10 bg-[#0b0d0c] py-16 text-[#f4efe5] sm:py-20">
-          <div className="section-shell max-w-4xl">
+        <section className="relative overflow-hidden border-y border-[#1d1b18]/10 bg-[#201e1a] py-16 text-[#fff7ea] sm:py-20">
+          <Image
+            src={siteContent.brand.mainLogo}
+            alt=""
+            width={620}
+            height={620}
+            className="watermark-logo left-[-180px] top-[-140px] w-[500px] opacity-[0.07]"
+            aria-hidden="true"
+          />
+          <div className="section-shell relative z-10 max-w-4xl">
             <h2 className="whitespace-pre-line text-4xl font-black leading-tight sm:text-5xl">
               {siteContent.closing.title}
             </h2>
-            <p className="mt-6 max-w-3xl text-lg leading-8 text-[#c7beb0]">
+            <p className="mt-6 max-w-3xl text-lg leading-8 text-[#d8ccbb]">
               {siteContent.closing.text}
             </p>
             <a href="#postular" className="btn-primary mt-8">
