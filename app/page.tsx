@@ -61,38 +61,74 @@ function ComparisonBlocks() {
 
 function FounderSection() {
   return (
-    <Section
-      id="socios-fundadores"
-      eyebrow={siteContent.founders.eyebrow}
-      title={siteContent.founders.title}
-      text={siteContent.founders.text}
-    >
-      <div className="grid gap-6 lg:grid-cols-[0.88fr_1.12fr] lg:items-start">
-        <div className="image-panel aspect-[4/3] lg:aspect-auto lg:min-h-[520px]">
+    <section id="socios-fundadores" className="bg-transparent py-16 sm:py-20 lg:py-24">
+      <div className="section-shell">
+        <div className="surface-card p-6 sm:p-8 lg:p-10">
+          <div className="grid gap-8 lg:grid-cols-[0.92fr_1.08fr] lg:items-end">
+            <div>
+              <p className="mb-5 text-sm font-semibold uppercase tracking-[0.24em] text-[#3f513f]">
+                {siteContent.founders.eyebrow}
+              </p>
+              <h2 className="text-[40px] font-black leading-none text-[#171614] sm:text-6xl lg:text-[68px]">
+                {siteContent.founders.title}
+              </h2>
+            </div>
+            <div>
+              <p className="whitespace-pre-line text-lg leading-8 text-[#4e473e]">
+                {siteContent.founders.text}
+              </p>
+              <a href="#postular" className="btn-primary mt-7">
+                {siteContent.cta.primary}
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div className="image-panel mt-8 aspect-[16/9]">
           <Image
             src={siteContent.brand.communityImage}
             alt="Entrenamiento acompañado en grupos reducidos ULF"
             fill
-            sizes="(min-width: 1024px) 42vw, 100vw"
+            sizes="(min-width: 1180px) 1180px, 100vw"
             className="object-cover"
           />
         </div>
-        <div className="grid content-start gap-5">
-          <article className="surface-card p-6">
-            <p className="text-xl font-semibold leading-8 text-[#201e1a]">
-              {siteContent.founders.emphasis}
+
+        <div className="mt-12">
+          <div className="max-w-3xl">
+            <p className="text-sm font-semibold uppercase tracking-[0.24em] text-[#3f513f]">
+              {siteContent.founders.benefitsTitle}
             </p>
-            <a href="#postular" className="btn-primary mt-6">
-              Quiero postular a Socio Fundador
+            <h3 className="mt-4 text-3xl font-semibold leading-tight text-[#171614] sm:text-4xl">
+              Beneficios pensados para iniciar con prioridad y continuidad.
+            </h3>
+          </div>
+
+          <div className="mt-8 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+            {siteContent.founders.benefits.map((benefit, index) => (
+              <article className="surface-card p-6" key={benefit.title}>
+                <span className="text-sm font-bold text-[#3f513f]">
+                  0{index + 1}
+                </span>
+                <h4 className="mt-5 text-xl font-semibold leading-tight text-[#171614]">
+                  {benefit.title}
+                </h4>
+                <p className="mt-4 leading-7 text-[#4e473e]">{benefit.text}</p>
+              </article>
+            ))}
+          </div>
+
+          <article className="surface-card mt-8 grid gap-6 p-6 sm:p-8 lg:grid-cols-[1fr_auto] lg:items-center">
+            <p className="whitespace-pre-line text-lg font-semibold leading-8 text-[#201e1a]">
+              {siteContent.founders.note}
+            </p>
+            <a href="#postular" className="btn-primary w-full lg:w-auto">
+              {siteContent.cta.primary}
             </a>
           </article>
-          <BulletGrid items={siteContent.founders.benefits} />
-          <p className="mt-5 text-sm leading-6 text-[#a9a193]">
-            {siteContent.founders.note}
-          </p>
         </div>
       </div>
-    </Section>
+    </section>
   );
 }
 

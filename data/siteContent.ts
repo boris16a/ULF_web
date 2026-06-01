@@ -37,23 +37,39 @@ export const siteContent = {
     metrics: ["Evaluación", "Corrección", "Seguimiento"],
   },
   founders: {
-    eyebrow: "Pre-apertura",
+    eyebrow: "SOCIOS FUNDADORES",
     title: "Socios Fundadores ULF",
     text:
-      "Estamos abriendo los primeros cupos para quienes quieran entrar a ULF desde el inicio y construir su proceso bajo el método completo.",
-    emphasis:
-      "Ser Socio Fundador no es comprar una promoción. Es apostar temprano por un sistema diseñado para ayudarte a sostener el entrenamiento.",
+      "Estamos abriendo los primeros cupos para quienes quieran iniciar su proceso en ULF desde la primera generación.\n\nSer Socio Fundador no es comprar una promoción.\nEs entrar primero a un sistema de entrenamiento estructurado, con cupos limitados, prioridad de horarios y condiciones especiales de preapertura.",
+    benefitsTitle: "Beneficios fundadores",
     benefits: [
-      "Prioridad para elegir horarios.",
-      "Clase 0 incluida.",
-      "Matrícula liberada en fase de pre-apertura.",
-      "Condiciones especiales de lanzamiento.",
-      "Acceso anticipado a cupos SG, DUO y PT.",
-      "Seguimiento inicial personalizado.",
-      "Pertenecer a la primera generación ULF.",
+      {
+        title: "Prioridad para elegir horarios",
+        text: "Los Socios Fundadores tendrán primera opción para tomar cupos en los bloques disponibles durante la etapa inicial.",
+      },
+      {
+        title: "Descuentos exclusivos en planes de continuidad",
+        text: "Acceso a condiciones especiales en planes trimestrales, semestrales y anuales. A mayor compromiso inicial, mayor beneficio fundador.",
+      },
+      {
+        title: "Condición fundador renovable",
+        text: "Los Socios Fundadores con plan semestral o anual podrán mantener su condición fundador en futuras renovaciones, siempre que mantengan continuidad activa.",
+      },
+      {
+        title: "Pack Fundador ULF",
+        text: "Quienes contraten planes desde 3 meses recibirán un pack de bienvenida ULF. El contenido será informado durante la etapa de inscripción.",
+      },
+      {
+        title: "Clase 0 fundacional incluida",
+        text: "Evaluación inicial, estado técnico y orientación de ingreso al sistema ULF, sin descontar sesiones del plan.",
+      },
+      {
+        title: "Primera Generación ULF",
+        text: "Ser parte del primer grupo que inicia el sistema ULF, con acceso preferente a horarios, formatos disponibles y beneficios fundadores.",
+      },
     ],
     note:
-      "Los cupos fundadores serán limitados para proteger la calidad del sistema y la experiencia inicial.",
+      "Primera generación limitada a 65 Socios Fundadores.\nLos cupos se asignarán por orden de postulación, evaluación de disponibilidad y contratación del plan.\n\nCupos limitados por formato y horario.",
   },
   whatIs: {
     eyebrow: "Diferencia ULF",
