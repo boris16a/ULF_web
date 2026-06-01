@@ -3,7 +3,7 @@ import { siteContent } from "@/data/siteContent";
 
 export default function Hero() {
   return (
-    <section id="inicio" className="soft-grid relative overflow-hidden bg-[#f7efe1]">
+    <section id="inicio" className="relative overflow-hidden bg-[#f7efe1]">
       <div className="section-shell relative grid gap-9 py-12 sm:py-16 lg:min-h-[700px] lg:grid-cols-[1fr_1.04fr] lg:items-center lg:gap-14 lg:py-14">
         <div className="relative z-10 max-w-[640px]">
           <p className="mb-5 text-xs font-semibold uppercase tracking-[0.26em] text-[#3f513f]">
@@ -15,13 +15,23 @@ export default function Hero() {
           <p className="mt-7 max-w-2xl text-lg leading-8 text-[#4e473e] sm:text-xl">
             {siteContent.hero.subtitle}
           </p>
-          <div className="mt-9 grid gap-3 sm:flex sm:flex-row">
-            <a href="#postular" className="btn-primary w-full sm:w-auto">
-              {siteContent.cta.primary}
-            </a>
-            <a href="#que-es" className="btn-secondary w-full sm:w-auto">
-              {siteContent.cta.secondary}
-            </a>
+          <div className="mt-9 grid gap-4 sm:grid-cols-[1.05fr_0.95fr]">
+            <div>
+              <a href="#postular" className="btn-primary w-full">
+                {siteContent.cta.primary}
+              </a>
+              <p className="mt-3 whitespace-pre-line text-xs leading-5 text-[#6f675d]">
+                {siteContent.hero.primaryMicrocopy}
+              </p>
+            </div>
+            <div>
+              <a href="#socios-fundadores" className="btn-secondary w-full">
+                {siteContent.cta.secondary}
+              </a>
+              <p className="mt-3 text-xs leading-5 text-[#6f675d]">
+                {siteContent.hero.secondaryMicrocopy}
+              </p>
+            </div>
           </div>
           <p className="mt-4 text-sm text-[#6f675d]">{siteContent.hero.note}</p>
         </div>

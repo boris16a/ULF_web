@@ -2,8 +2,10 @@ export const siteContent = {
   brand: {
     name: "ULF",
     descriptor: "Centro de Entrenamiento Estructurado.",
+    headerDescriptor: "Centro boutique",
     preOpening: "Pre-apertura ULF · Cupos limitados para Socios Fundadores",
     mainLogo: "/images/ULF_logo.png",
+    headerLogo: "/images/ULF_logo2.png",
     docsLogo: "/images/ULF_logo_docs.png",
     heroVideo: "/images/ULF_animacion.mp4",
     heroImage: "/images/Hero.png",
@@ -12,14 +14,13 @@ export const siteContent = {
   },
   nav: [
     { label: "Socios Fundadores", href: "#socios-fundadores" },
-    { label: "Qué es ULF", href: "#que-es" },
+    { label: "Qué es ULF", href: "#que-significa-ulf" },
     { label: "Método", href: "#metodo" },
     { label: "Formatos", href: "#formatos" },
-    { label: "Postular", href: "#postular" },
   ],
   cta: {
     primary: "Postular a Socio Fundador",
-    secondary: "Conocer ULF",
+    secondary: "Ver beneficios fundadores",
     tertiary: "Quiero ser parte de la primera generación ULF",
     reserve: "Reservar cupo de pre-apertura",
   },
@@ -27,7 +28,10 @@ export const siteContent = {
     kicker: "Socios Fundadores ULF",
     title: "Sé parte de la primera generación ULF.",
     subtitle:
-      "Entrenamiento con método para personas que quieren recuperar fuerza, energía y control, sin volver a abandonar el proceso.",
+      "Accede antes que la apertura general a cupos limitados, prioridad de horarios, matrícula $0 y beneficios exclusivos para Socios Fundadores.",
+    primaryMicrocopy:
+      "Primera generación limitada a 65 Socios Fundadores.\nLos cupos se asignarán por orden de postulación y compatibilidad de horario.",
+    secondaryMicrocopy: "Conoce los beneficios de Socios Fundadores.",
     note:
       "Cupos limitados de pre-apertura. Acceso anticipado a horarios, condiciones fundadoras y Clase 0 inicial.",
     metrics: ["Evaluación", "Corrección", "Seguimiento"],

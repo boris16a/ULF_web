@@ -22,7 +22,7 @@ export default function Footer() {
           <a className="transition hover:text-[#f4efe5]" href="#socios-fundadores">
             Socios Fundadores
           </a>
-          <a className="transition hover:text-[#f4efe5]" href="#que-es">
+          <a className="transition hover:text-[#f4efe5]" href="#que-significa-ulf">
             Qué es ULF
           </a>
           <a className="transition hover:text-[#f4efe5]" href="#metodo">
