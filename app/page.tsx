@@ -30,7 +30,7 @@ function ComparisonBlocks() {
       {siteContent.problem.comparisons.map((block, index) => (
         <article
           className={`surface-card p-6 ${
-            index === 0 ? "text-[#4e473e]" : "bg-[#201e1a] text-[#fff7ea]"
+            index === 0 ? "text-[#4e473e]" : "bg-[#2a2823] text-[#fff7ea]"
           }`}
           key={block.title}
         >
@@ -85,12 +85,12 @@ function FounderSection() {
 function WolfSection() {
   return (
     <Section
+      id="que-significa-ulf"
       eyebrow={siteContent.wolf.eyebrow}
       title={siteContent.wolf.title}
       text={siteContent.wolf.text}
-      tone="muted"
     >
-      <div className="surface-card relative overflow-hidden p-7 sm:p-9">
+      <div className="surface-card relative grid gap-6 overflow-hidden p-7 sm:p-9 lg:grid-cols-[0.7fr_1.3fr] lg:items-center">
         <Image
           src={siteContent.brand.mainLogo}
           alt=""
@@ -99,9 +99,21 @@ function WolfSection() {
           className="watermark-logo bottom-[-180px] right-[-110px] w-[420px]"
           aria-hidden="true"
         />
-        <p className="relative z-10 max-w-3xl text-2xl font-semibold leading-tight text-[#201e1a]">
-          {siteContent.wolf.closing}
-        </p>
+        <div className="relative z-10 flex min-h-[220px] items-center justify-center">
+          <Image
+            src={siteContent.brand.mainLogo}
+            alt="ULF"
+            width={280}
+            height={280}
+            className="h-auto w-48 opacity-80 sm:w-56"
+          />
+        </div>
+        <div className="relative z-10">
+          <p className="leading-8 text-[#4e473e]">{siteContent.wolf.secondText}</p>
+          <p className="mt-6 max-w-3xl text-2xl font-semibold leading-tight text-[#201e1a]">
+            {siteContent.wolf.closing}
+          </p>
+        </div>
       </div>
     </Section>
   );
@@ -114,6 +126,7 @@ export default function Home() {
       <main>
         <Hero />
         <FounderSection />
+        <WolfSection />
 
         <Section
           id="que-es"
@@ -123,9 +136,6 @@ export default function Home() {
         >
           <BulletGrid items={siteContent.whatIs.bullets} />
         </Section>
-
-        <WolfSection />
-
         <Section
           eyebrow={siteContent.problem.eyebrow}
           title={siteContent.problem.title}
@@ -207,7 +217,7 @@ export default function Home() {
                   Accede primero a información de pre-apertura, horarios disponibles y condiciones fundadoras.
                 </p>
                 <p className="mt-5 leading-8 text-[#eadfce]">
-                  Sin valores inventados ni promesas cerradas. Te contactaremos con la información real cuando esté disponible.
+                  Recibirás información prioritaria sobre horarios, formatos disponibles y condiciones fundadoras antes de la apertura general.
                 </p>
               </div>
             </div>
@@ -215,7 +225,7 @@ export default function Home() {
           </div>
         </Section>
 
-        <section className="relative overflow-hidden border-y border-[#1d1b18]/10 bg-[#201e1a] py-16 text-[#fff7ea] sm:py-20">
+        <section className="relative overflow-hidden border-y border-[#1d1b18]/10 bg-[#2a2823] py-16 text-[#fff7ea] sm:py-20">
           <Image
             src={siteContent.brand.mainLogo}
             alt=""

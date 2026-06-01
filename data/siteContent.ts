@@ -19,7 +19,7 @@ export const siteContent = {
   ],
   cta: {
     primary: "Postular a Socio Fundador",
-    secondary: "Conocer el método",
+    secondary: "Conocer ULF",
     tertiary: "Quiero ser parte de la primera generación ULF",
     reserve: "Reservar cupo de pre-apertura",
   },
@@ -27,9 +27,9 @@ export const siteContent = {
     kicker: "Socios Fundadores ULF",
     title: "Sé parte de la primera generación ULF.",
     subtitle:
-      "Entrenamiento estructurado para personas que quieren recuperar fuerza, energía y constancia con un sistema de seguimiento real.",
+      "Entrenamiento con método para personas que quieren recuperar fuerza, energía y control, sin volver a abandonar el proceso.",
     note:
-      "Cupos limitados de pre-apertura. Acceso anticipado a horarios, Clase 0 y condiciones fundadoras.",
+      "Cupos limitados de pre-apertura. Acceso anticipado a horarios, condiciones fundadoras y Clase 0 inicial.",
     metrics: ["Evaluación", "Corrección", "Seguimiento"],
   },
   founders: {
@@ -53,25 +53,25 @@ export const siteContent = {
   },
   whatIs: {
     eyebrow: "Diferencia ULF",
-    title: "No es un gimnasio tradicional. Es un Centro de Entrenamiento Estructurado.",
+    title: "No pagas por acceso.\nPagas por dirección.",
     text:
-      "ULF es un sistema diseñado para que el entrenamiento deje de depender de la motivación y empiece a sostenerse con método, seguimiento y progresión. No vendemos acceso libre, intensidad vacía ni una transformación rápida. ULF construye capacidad física estructurada.",
+      "En ULF no entras a improvisar. Entras con evaluación inicial, corrección técnica, registro por sesión y seguimiento real.",
     bullets: [
-      "Evaluación inicial obligatoria.",
-      "Grupos reducidos.",
-      "Corrección técnica.",
-      "Registro por sesión.",
-      "Seguimiento de asistencia.",
-      "Progresión por ciclos.",
+      "Sabemos desde dónde partes.",
+      "Registramos cómo avanzas.",
+      "Corregimos antes de cargar.",
+      "Detectamos cuando te desconectas.",
+      "Protegemos tu proceso.",
     ],
   },
   wolf: {
     eyebrow: "Identidad",
-    title: "¿Por qué un lobo?",
+    title: "¿Qué significa ULF?",
     text:
-      "El lobo representa dirección, pertenencia y adaptación. No por agresividad, sino por estructura. En ULF, el lobo no compite por ego: avanza con método, se adapta al entorno y progresa dentro de un sistema.",
-    closing:
-      "No se trata de entrenar más fuerte que otros. Se trata de construir una versión más capaz de ti mismo.",
+      "ULF nace del símbolo del lobo: dirección, pertenencia y adaptación. No representa agresividad ni competencia. Representa la capacidad de avanzar con estructura, dentro de un sistema, sin depender del impulso del momento.",
+    secondText:
+      "En ULF, el lobo no corre solo ni compite por ego. Avanza con método, se adapta al proceso y sostiene el progreso en el tiempo.",
+    closing: "ULF es eso: fuerza con dirección.",
   },
   problem: {
     eyebrow: "El punto de quiebre",
