@@ -151,30 +151,69 @@ function FounderSection() {
 
 function WolfSection() {
   return (
-    <Section
-      id="que-significa-ulf"
-      eyebrow={siteContent.wolf.eyebrow}
-      title={siteContent.wolf.title}
-      text={siteContent.wolf.text}
-      >
-      <div className="surface-card relative grid gap-6 overflow-hidden p-7 sm:p-9 lg:grid-cols-[0.7fr_1.3fr] lg:items-center">
-        <div className="relative z-10 flex min-h-[220px] items-center justify-center">
-          <Image
-            src={siteContent.brand.mainLogo}
-            alt="ULF"
-            width={280}
-            height={280}
-            className="h-auto w-48 opacity-80 sm:w-56"
-          />
+    <section id="que-significa-ulf" className="bg-transparent py-16 sm:py-20 lg:py-24">
+      <div className="section-shell">
+        <div className="grid gap-8 lg:grid-cols-[1.18fr_0.82fr] lg:items-start">
+          <div>
+            <p className="mb-4 text-sm font-semibold uppercase tracking-[0.24em] text-[#3f513f]">
+              {siteContent.wolf.eyebrow}
+            </p>
+            <h2 className="max-w-4xl text-4xl font-black leading-tight text-[#171614] sm:text-5xl lg:text-[58px]">
+              {siteContent.wolf.title}
+            </h2>
+            <p className="mt-6 max-w-3xl text-lg leading-8 text-[#4e473e]">
+              {siteContent.wolf.text}
+            </p>
+          </div>
+
+          <div className="surface-card relative overflow-hidden p-8 lg:sticky lg:top-36">
+            <div className="absolute inset-x-0 top-0 h-1 bg-[#3f513f]/50" />
+            <Image
+              src={siteContent.brand.headerLogo}
+              alt="ULF"
+              width={420}
+              height={240}
+              className="mx-auto h-auto w-full max-w-[310px] object-contain opacity-90"
+            />
+            <p className="mt-8 text-sm font-semibold uppercase tracking-[0.22em] text-[#3f513f]">
+              Hogar de lobos
+            </p>
+            <p className="mt-4 text-lg leading-8 text-[#4e473e]">
+              Dirección, pertenencia y adaptación convertidas en seguimiento real.
+            </p>
+          </div>
         </div>
-        <div className="relative z-10">
-          <p className="leading-8 text-[#4e473e]">{siteContent.wolf.secondText}</p>
-          <p className="mt-6 max-w-3xl text-2xl font-semibold leading-tight text-[#201e1a]">
+
+        <div className="mt-10 grid gap-4 lg:grid-cols-[1fr_1fr]">
+          {siteContent.wolf.blocks.map((block, index) => (
+            <article
+              className={`surface-card p-6 sm:p-7 ${
+                index === 2 ? "lg:col-span-2 lg:grid lg:grid-cols-[0.32fr_1fr] lg:items-center lg:gap-8" : ""
+              }`}
+              key={block.title}
+            >
+              <div>
+                <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[#3f513f]">
+                  {block.label}
+                </p>
+                <h3 className="mt-4 text-2xl font-semibold leading-tight text-[#171614]">
+                  {block.title}
+                </h3>
+              </div>
+              <p className="mt-5 whitespace-pre-line leading-8 text-[#4e473e] lg:mt-0">
+                {block.text}
+              </p>
+            </article>
+          ))}
+        </div>
+
+        <div className="surface-card mt-8 p-7 sm:p-9">
+          <p className="whitespace-pre-line text-2xl font-semibold leading-tight text-[#201e1a] sm:text-3xl">
             {siteContent.wolf.closing}
           </p>
         </div>
       </div>
-    </Section>
+    </section>
   );
 }
 

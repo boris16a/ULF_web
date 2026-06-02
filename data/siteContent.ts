@@ -94,13 +94,32 @@ export const siteContent = {
     ],
   },
   wolf: {
-    eyebrow: "Identidad",
-    title: "¿Qué significa ULF?",
+    eyebrow: "IDENTIDAD",
+    title: "ULF nace de una idea simple: nadie sostiene un cambio solo.",
     text:
-      "ULF nace del símbolo del lobo: dirección, pertenencia y adaptación. No representa agresividad ni competencia. Representa la capacidad de avanzar con estructura, dentro de un sistema, sin depender del impulso del momento.",
-    secondText:
-      "En ULF, el lobo no corre solo ni compite por ego. Avanza con método, se adapta al proceso y sostiene el progreso en el tiempo.",
-    closing: "ULF es eso: fuerza con dirección.",
+      "ULF, literalmente significa lobo en escandinavo. La idea surge de ULFHEIM, hogar de lobos, donde la manada representa dirección, pertenencia y adaptación. No representa agresividad ni competencia. Un hogar es justamente donde las condiciones se hacen ideales para que cada persona avance con método, acompañamiento y continuidad.",
+    blocks: [
+      {
+        title: "Fundado desde dos miradas complementarias.",
+        label: "Dos miradas",
+        text:
+          "ULF nace de una conversación entre Carlos y Boris.\n\nCarlos, entrenador con más de diez años de experiencia, ha visto de cerca por qué muchas personas abandonan el gimnasio: falta de estructura, baja corrección técnica y poca continuidad real.\n\nBoris, químico farmacéutico, ha enfocado su mirada en salud preventiva, hábitos sostenibles y acompañamiento antes de que el problema se transforme en tratamiento permanente.\n\nDesde esas dos miradas nace ULF: un centro de entrenamiento estructurado donde entrenar no significa solo asistir a clases, sino integrarse a un sistema que conoce tu proceso, observa tus avances y también detecta cuando te desconectas.",
+      },
+      {
+        title: "¿Por qué una manada?",
+        label: "Una manada",
+        text:
+          "Porque el problema no es solo entrenar. El problema es sostenerlo.\n\nEn ULF, pertenecer no significa venir a un lugar bonito ni compartir una frase motivacional. Significa que tu proceso importa. Si faltas, lo notamos. Si te lesionas, ajustamos. Si estás cansado, adaptamos. Si pierdes continuidad, te acompañamos para volver.\n\nLa manada no es una metáfora decorativa. Es la forma en que entendemos el entrenamiento: seguimiento activo, vínculo real y progreso sostenido.",
+      },
+      {
+        title: "Un método",
+        label: "Un método",
+        text:
+          "Evaluación, corrección, registro y acompañamiento para sostener el progreso en el tiempo.",
+      },
+    ],
+    closing:
+      "ULF no es solo un nombre.\nDesde ahora es nuestro escudo, un alero, un método donde entrenar es pertenencia y seguimiento real.",
   },
   problem: {
     eyebrow: "El punto de quiebre",
