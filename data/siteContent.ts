@@ -10,6 +10,7 @@ export const siteContent = {
     heroVideo: "/images/ULF_animacion.mp4",
     heroImage: "/images/Hero.png",
     communityImage: "/images/Comunidad.png",
+    communityFounderImage: "/images/Comunidad2.png",
     consistencyImage: "/images/constancia.png",
   },
   nav: [
@@ -37,10 +38,11 @@ export const siteContent = {
     metrics: ["Evaluación", "Corrección", "Seguimiento"],
   },
   founders: {
-    eyebrow: "SOCIOS FUNDADORES",
+    eyebrow: "Primera generación",
     title: "Socios Fundadores ULF",
+    statement: "Ser Socio Fundador no es comprar una promoción.",
     text:
-      "Estamos abriendo los primeros cupos para quienes quieran iniciar su proceso en ULF desde la primera generación.\n\nSer Socio Fundador no es comprar una promoción.\nEs entrar primero a un sistema de entrenamiento estructurado, con cupos limitados, prioridad de horarios y condiciones especiales de preapertura.",
+      "Es entrar primero a un sistema de entrenamiento estructurado, con cupos limitados, prioridad de horarios y condiciones especiales de preapertura.",
     benefitsTitle: "Beneficios fundadores",
     benefits: [
       {
@@ -68,8 +70,15 @@ export const siteContent = {
         text: "Ser parte del primer grupo que inicia el sistema ULF, con acceso preferente a horarios, formatos disponibles y beneficios fundadores.",
       },
     ],
-    note:
-      "Primera generación limitada a 65 Socios Fundadores.\nLos cupos se asignarán por orden de postulación, evaluación de disponibilidad y contratación del plan.\n\nCupos limitados por formato y horario.",
+    conversion: {
+      title: "Sé parte.",
+      featuredText:
+        "Cuéntanos sobre ti y recibirás información detallada para activar tus entrenamientos en ULF.",
+      text:
+        "Además, te enviaremos una guía práctica de bienvenida sobre energía, control de insulina y entrenamiento.",
+      microcopy:
+        "Primera generación limitada a 65 Socios Fundadores.\nCupos sujetos a disponibilidad por formato, horario y contratación del plan.",
+    },
   },
   whatIs: {
     eyebrow: "Diferencia ULF",

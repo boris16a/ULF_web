@@ -64,7 +64,7 @@ function FounderSection() {
     <section id="socios-fundadores" className="bg-transparent py-16 sm:py-20 lg:py-24">
       <div className="section-shell">
         <div className="surface-card p-6 sm:p-8 lg:p-10">
-          <div className="grid gap-8 lg:grid-cols-[0.92fr_1.08fr] lg:items-end">
+          <div className="grid gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:items-end">
             <div>
               <p className="mb-5 text-sm font-semibold uppercase tracking-[0.24em] text-[#3f513f]">
                 {siteContent.founders.eyebrow}
@@ -74,19 +74,19 @@ function FounderSection() {
               </h2>
             </div>
             <div>
-              <p className="whitespace-pre-line text-lg leading-8 text-[#4e473e]">
+              <p className="text-2xl font-semibold leading-tight text-[#201e1a] sm:text-3xl">
+                {siteContent.founders.statement}
+              </p>
+              <p className="mt-5 text-lg leading-8 text-[#4e473e]">
                 {siteContent.founders.text}
               </p>
-              <a href="#postular" className="btn-primary mt-7">
-                {siteContent.cta.primary}
-              </a>
             </div>
           </div>
         </div>
 
         <div className="image-panel mt-8 aspect-[16/9]">
           <Image
-            src={siteContent.brand.communityImage}
+            src={siteContent.brand.communityFounderImage}
             alt="Entrenamiento acompañado en grupos reducidos ULF"
             fill
             sizes="(min-width: 1180px) 1180px, 100vw"
@@ -105,12 +105,9 @@ function FounderSection() {
           </div>
 
           <div className="mt-8 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
-            {siteContent.founders.benefits.map((benefit, index) => (
+            {siteContent.founders.benefits.map((benefit) => (
               <article className="surface-card p-6" key={benefit.title}>
-                <span className="text-sm font-bold text-[#3f513f]">
-                  0{index + 1}
-                </span>
-                <h4 className="mt-5 text-xl font-semibold leading-tight text-[#171614]">
+                <h4 className="text-xl font-semibold leading-tight text-[#171614]">
                   {benefit.title}
                 </h4>
                 <p className="mt-4 leading-7 text-[#4e473e]">{benefit.text}</p>
@@ -118,13 +115,33 @@ function FounderSection() {
             ))}
           </div>
 
-          <article className="surface-card mt-8 grid gap-6 p-6 sm:p-8 lg:grid-cols-[1fr_auto] lg:items-center">
-            <p className="whitespace-pre-line text-lg font-semibold leading-8 text-[#201e1a]">
-              {siteContent.founders.note}
-            </p>
-            <a href="#postular" className="btn-primary w-full lg:w-auto">
-              {siteContent.cta.primary}
-            </a>
+          <article className="surface-card mt-8 grid gap-8 overflow-hidden p-6 sm:p-8 lg:grid-cols-[0.72fr_1.28fr] lg:items-center lg:p-10">
+            <div className="relative flex min-h-[180px] items-center justify-center bg-[#efe5d4]/70 p-6">
+              <Image
+                src={siteContent.brand.headerLogo}
+                alt="ULF"
+                width={320}
+                height={180}
+                className="h-auto w-56 object-contain opacity-90 sm:w-64"
+              />
+            </div>
+            <div>
+              <h3 className="text-5xl font-black leading-none text-[#171614] sm:text-6xl">
+                {siteContent.founders.conversion.title}
+              </h3>
+              <p className="mt-6 max-w-3xl text-2xl font-semibold leading-tight text-[#201e1a]">
+                {siteContent.founders.conversion.featuredText}
+              </p>
+              <p className="mt-5 max-w-2xl leading-8 text-[#4e473e]">
+                {siteContent.founders.conversion.text}
+              </p>
+              <a href="#postular" className="btn-primary mt-7 min-h-14 w-full px-7 text-base sm:w-auto">
+                {siteContent.cta.primary}
+              </a>
+              <p className="mt-4 whitespace-pre-line text-sm leading-6 text-[#6f675d]">
+                {siteContent.founders.conversion.microcopy}
+              </p>
+            </div>
           </article>
         </div>
       </div>
