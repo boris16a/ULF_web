@@ -9,6 +9,7 @@ export const siteContent = {
     docsLogo: "/images/ULF_logo_docs.png",
     heroVideo: "/images/ULF_animacion.mp4",
     heroImage: "/images/Hero.png",
+    heroPosterImage: "/images/Hero2.png",
     communityImage: "/images/Comunidad.png",
     communityFounderImage: "/images/Comunidad2.png",
     consistencyImage: "/images/constancia.png",
@@ -95,7 +96,7 @@ export const siteContent = {
   },
   wolf: {
     eyebrow: "IDENTIDAD",
-    title: "ULF nace de una idea simple: nadie sostiene un cambio solo.",
+    title: "ULF nace de la simple idea sostener cambios y cumplir objetivos con acompañamiento",
     text:
       "ULF, literalmente significa lobo en escandinavo. La idea surge de ULFHEIM, hogar de lobos, donde la manada representa dirección, pertenencia y adaptación. No representa agresividad ni competencia. Un hogar es justamente donde las condiciones se hacen ideales para que cada persona avance con método, acompañamiento y continuidad.",
     blocks: [
@@ -115,11 +116,9 @@ export const siteContent = {
         title: "Un método",
         label: "Un método",
         text:
-          "Evaluación, corrección, registro y acompañamiento para sostener el progreso en el tiempo.",
+          "Evaluación, corrección, registro y acompañamiento para sostener el progreso en el tiempo.\n\nULF no es solo un nombre. Desde ahora es nuestro escudo, un alero, un método donde entrenar es pertenencia y seguimiento real.",
       },
     ],
-    closing:
-      "ULF no es solo un nombre.\nDesde ahora es nuestro escudo, un alero, un método donde entrenar es pertenencia y seguimiento real.",
   },
   problem: {
     eyebrow: "El punto de quiebre",

@@ -169,18 +169,12 @@ function WolfSection() {
           <div className="surface-card relative overflow-hidden p-8 lg:sticky lg:top-36">
             <div className="absolute inset-x-0 top-0 h-1 bg-[#3f513f]/50" />
             <Image
-              src={siteContent.brand.headerLogo}
+              src={siteContent.brand.mainLogo}
               alt="ULF"
               width={420}
               height={240}
               className="mx-auto h-auto w-full max-w-[310px] object-contain opacity-90"
             />
-            <p className="mt-8 text-sm font-semibold uppercase tracking-[0.22em] text-[#3f513f]">
-              Hogar de lobos
-            </p>
-            <p className="mt-4 text-lg leading-8 text-[#4e473e]">
-              Dirección, pertenencia y adaptación convertidas en seguimiento real.
-            </p>
           </div>
         </div>
 
@@ -207,11 +201,6 @@ function WolfSection() {
           ))}
         </div>
 
-        <div className="surface-card mt-8 p-7 sm:p-9">
-          <p className="whitespace-pre-line text-2xl font-semibold leading-tight text-[#201e1a] sm:text-3xl">
-            {siteContent.wolf.closing}
-          </p>
-        </div>
       </div>
     </section>
   );

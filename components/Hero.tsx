@@ -37,7 +37,7 @@ export default function Hero() {
               loop
               playsInline
               preload="metadata"
-              poster={siteContent.brand.heroImage}
+              poster={siteContent.brand.heroPosterImage}
               aria-label="Animación visual de identidad ULF"
             >
               <source src={siteContent.brand.heroVideo} type="video/mp4" />
@@ -60,7 +60,7 @@ export default function Hero() {
       <div className="section-shell pb-14 sm:pb-18">
         <div className="image-panel aspect-[16/7]">
           <Image
-            src={siteContent.brand.heroImage}
+            src={siteContent.brand.heroPosterImage}
             alt="Persona preparándose para entrenar en un entorno ULF sobrio y estructurado"
             fill
             priority
