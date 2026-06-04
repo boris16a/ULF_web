@@ -13,7 +13,7 @@ export const siteContent = {
     communityImage: "/images/Comunidad.png",
     communityFounderImage: "/images/Comunidad2.png",
     consistencyImage: "/images/constancia.png",
-    consistencySystemImage: "/images/constancia2.png",
+    consistencySystemImage: "/images/constancia3.png",
   },
   nav: [
     { label: "Socios Fundadores", href: "#socios-fundadores" },

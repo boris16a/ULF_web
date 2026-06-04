@@ -26,14 +26,14 @@ function BulletGrid({ items }: { items: string[] }) {
 function ComparisonBlocks() {
   return (
     <div className="grid gap-4 lg:grid-cols-[0.86fr_1.14fr] lg:items-stretch">
-      <article className="surface-card p-6 text-[#4e473e] lg:p-7">
-        <h3 className="text-xl font-semibold text-[#171614]">
+      <article className="border border-[#1d1b18]/8 bg-[#e7ded0]/55 p-6 text-[#6f675d] shadow-none lg:p-7">
+        <h3 className="text-xl font-semibold text-[#4e473e]">
           {siteContent.problem.comparisons[0].title}
         </h3>
         <ul className="mt-5 space-y-3">
           {siteContent.problem.comparisons[0].items.map((item) => (
             <li className="flex gap-3" key={item}>
-              <span className="mt-2 h-1.5 w-1.5 shrink-0 bg-[#a88a67]" />
+              <span className="mt-2 h-1.5 w-1.5 shrink-0 bg-[#9b907f]" />
               <span>{item}</span>
             </li>
           ))}
@@ -42,7 +42,7 @@ function ComparisonBlocks() {
       <article
         className="relative overflow-hidden p-8 text-[#fff8ed] shadow-[0_22px_70px_rgba(56,45,34,0.16)] lg:p-9"
         style={{
-          backgroundImage: `linear-gradient(105deg, rgba(29, 27, 24, 0.84), rgba(29, 27, 24, 0.58)), url(${siteContent.brand.consistencySystemImage})`,
+          backgroundImage: `linear-gradient(90deg, rgba(24, 22, 19, 0.9) 0%, rgba(24, 22, 19, 0.76) 38%, rgba(24, 22, 19, 0.38) 68%, rgba(24, 22, 19, 0.12) 100%), url(${siteContent.brand.consistencySystemImage})`,
           backgroundPosition: "center",
           backgroundSize: "cover",
         }}
