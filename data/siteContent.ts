@@ -96,9 +96,11 @@ export const siteContent = {
   },
   wolf: {
     eyebrow: "IDENTIDAD",
-    title: "ULF nace de la simple idea sostener cambios y cumplir objetivos con acompañamiento",
+    title: "ULF, hogar de lobos",
+    subtitle:
+      "El nacimiento de un método creado para sostener cambios y cumplir objetivos con el rol principal de acompañar.",
     text:
-      "ULF, literalmente significa lobo en escandinavo. La idea surge de ULFHEIM, hogar de lobos, donde la manada representa dirección, pertenencia y adaptación. No representa agresividad ni competencia. Un hogar es justamente donde las condiciones se hacen ideales para que cada persona avance con método, acompañamiento y continuidad.",
+      "ULF, literalmente significa lobo en escandinavo. La idea surge de ULFHEIM, hogar de lobos, donde la manada representa dirección, pertenencia y adaptación. Un hogar es justamente donde las condiciones se hacen ideales para que cada persona avance con método, acompañamiento y continuidad.",
     blocks: [
       {
         title: "Fundado desde dos miradas complementarias.",

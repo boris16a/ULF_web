@@ -153,27 +153,30 @@ function WolfSection() {
   return (
     <section id="que-significa-ulf" className="bg-transparent py-16 sm:py-20 lg:py-24">
       <div className="section-shell">
-        <div className="grid gap-8 lg:grid-cols-[1.18fr_0.82fr] lg:items-start">
+        <div className="grid gap-10 lg:grid-cols-[1.3fr_0.7fr] lg:items-center">
           <div>
             <p className="mb-4 text-sm font-semibold uppercase tracking-[0.24em] text-[#3f513f]">
               {siteContent.wolf.eyebrow}
             </p>
-            <h2 className="max-w-4xl text-4xl font-black leading-tight text-[#171614] sm:text-5xl lg:text-[58px]">
+            <h2 className="max-w-3xl text-4xl font-black leading-tight text-[#171614] sm:text-5xl lg:text-[56px]">
               {siteContent.wolf.title}
             </h2>
+            <p className="mt-5 max-w-3xl text-2xl font-semibold leading-tight text-[#201e1a] sm:text-3xl">
+              {siteContent.wolf.subtitle}
+            </p>
             <p className="mt-6 max-w-3xl text-lg leading-8 text-[#4e473e]">
               {siteContent.wolf.text}
             </p>
           </div>
 
-          <div className="surface-card relative overflow-hidden p-8 lg:sticky lg:top-36">
+          <div className="surface-card relative mx-auto w-full max-w-[360px] overflow-hidden p-5 sm:p-6 lg:sticky lg:top-36">
             <div className="absolute inset-x-0 top-0 h-1 bg-[#3f513f]/50" />
             <Image
               src={siteContent.brand.mainLogo}
               alt="ULF"
               width={420}
               height={240}
-              className="mx-auto h-auto w-full max-w-[310px] object-contain opacity-90"
+              className="mx-auto h-auto w-full max-w-[230px] object-contain opacity-90 sm:max-w-[260px]"
             />
           </div>
         </div>
