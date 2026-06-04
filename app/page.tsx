@@ -1,27 +1,10 @@
-import AudienceSection from "@/components/AudienceSection";
-import EntryExperience from "@/components/EntryExperience";
 import Footer from "@/components/Footer";
-import FormatCards from "@/components/FormatCards";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import Image from "next/image";
-import MethodCards from "@/components/MethodCards";
 import Section from "@/components/Section";
 import WaitlistForm from "@/components/WaitlistForm";
 import { siteContent } from "@/data/siteContent";
-
-function BulletGrid({ items }: { items: string[] }) {
-  return (
-    <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-      {items.map((item) => (
-        <div className="surface-card p-4 text-[#3f3a33]" key={item}>
-          <span className="mr-3 inline-block h-1.5 w-1.5 bg-[#8e9b79] align-middle" />
-          <span>{item}</span>
-        </div>
-      ))}
-    </div>
-  );
-}
 
 function ComparisonBlocks() {
   return (
@@ -222,57 +205,12 @@ export default function Home() {
         <WolfSection />
 
         <Section
-          id="que-es"
-          eyebrow={siteContent.whatIs.eyebrow}
-          title={siteContent.whatIs.title}
-          text={siteContent.whatIs.text}
-        >
-          <BulletGrid items={siteContent.whatIs.bullets} />
-        </Section>
-        <Section
           eyebrow={siteContent.problem.eyebrow}
           title={siteContent.problem.title}
           text={siteContent.problem.text}
           tone="muted"
         >
           <ComparisonBlocks />
-        </Section>
-
-        <Section
-          id="metodo"
-          eyebrow={siteContent.method.eyebrow}
-          title={siteContent.method.title}
-          text={siteContent.method.text}
-          tone="muted"
-        >
-          <MethodCards />
-        </Section>
-
-        <Section
-          id="formatos"
-          eyebrow={siteContent.formats.eyebrow}
-          title={siteContent.formats.title}
-          text={siteContent.formats.text}
-        >
-          <FormatCards />
-        </Section>
-
-        <Section
-          id="experiencia"
-          eyebrow={siteContent.entry.eyebrow}
-          title={siteContent.entry.title}
-          text={siteContent.entry.text}
-          tone="muted"
-        >
-          <EntryExperience />
-        </Section>
-
-        <Section
-          eyebrow={siteContent.audience.eyebrow}
-          title={siteContent.audience.title}
-          text={siteContent.audience.text}
-        >
-          <AudienceSection />
         </Section>
 
         <Section

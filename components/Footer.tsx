@@ -25,12 +25,6 @@ export default function Footer() {
           <a className="transition hover:text-[#171614]" href="#que-significa-ulf">
             Qué es ULF
           </a>
-          <a className="transition hover:text-[#171614]" href="#metodo">
-            Método
-          </a>
-          <a className="transition hover:text-[#171614]" href="#formatos">
-            Formatos
-          </a>
           <a className="transition hover:text-[#171614]" href="#postular">
             Postular
           </a>

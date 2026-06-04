@@ -18,8 +18,6 @@ export const siteContent = {
   nav: [
     { label: "Socios Fundadores", href: "#socios-fundadores" },
     { label: "Qué es ULF", href: "#que-significa-ulf" },
-    { label: "Método", href: "#metodo" },
-    { label: "Formatos", href: "#formatos" },
   ],
   cta: {
     primary: "Postular a Socio Fundador",
@@ -82,19 +80,6 @@ export const siteContent = {
         "Primera generación limitada a 65 Socios Fundadores.\nCupos sujetos a disponibilidad por formato, horario y contratación del plan.",
     },
   },
-  whatIs: {
-    eyebrow: "Diferencia ULF",
-    title: "No pagas por acceso.\nPagas por dirección.",
-    text:
-      "En ULF no entras a improvisar. Entras con evaluación inicial, corrección técnica, registro por sesión y seguimiento real.",
-    bullets: [
-      "Sabemos desde dónde partes.",
-      "Registramos cómo avanzas.",
-      "Corregimos antes de cargar.",
-      "Detectamos cuando te desconectas.",
-      "Protegemos tu proceso.",
-    ],
-  },
   wolf: {
     eyebrow: "IDENTIDAD",
     title: "ULF, hogar de lobos",
@@ -142,88 +127,6 @@ export const siteContent = {
         ],
       },
     ],
-  },
-  method: {
-    eyebrow: "Método ULF",
-    title: "Método simple. Seguimiento real.",
-    text:
-      "En ULF no entrenas al azar. Lo importante es que cada sesión tenga dirección, registro y continuidad.",
-    cards: [
-      {
-        title: "Evaluamos",
-        text: "Conocemos tu punto de partida técnico, tu historial y tus objetivos.",
-      },
-      {
-        title: "Entrenamos",
-        text: "Te integras al formato adecuado: SG, DUO o PT.",
-      },
-      {
-        title: "Seguimos",
-        text: "Registramos tu progreso, tu asistencia y tus focos de mejora.",
-      },
-    ],
-  },
-  formats: {
-    eyebrow: "Formatos",
-    title: "Elige el nivel de acompañamiento que necesitas.",
-    text:
-      "ULF opera con tres formatos bajo un mismo método. La diferencia está en el nivel de acompañamiento que necesitas para iniciar y sostener tu proceso.",
-    cards: [
-      {
-        title: "Small Group",
-        tag: "SG",
-        highlight: "Recomendado para la mayoría de los Socios Fundadores.",
-        text:
-          "Grupos reducidos de hasta 8 personas. Ideal para construir constancia, fuerza y técnica en un entorno acompañado, sin sentirte perdido en una sala llena.",
-      },
-      {
-        title: "DUO",
-        tag: "Técnico",
-        text:
-          "Entrenamiento para dos personas o trabajo técnico más focalizado. Ideal si necesitas más corrección, readaptación o una transición más personalizada.",
-      },
-      {
-        title: "Personal Training",
-        tag: "PT",
-        text:
-          "Acompañamiento individual para objetivos específicos, casos complejos o mayor personalización.",
-      },
-    ],
-  },
-  entry: {
-    eyebrow: "Cómo ingresar",
-    title: "Así se entra a ULF",
-    text: "Un ingreso simple, claro y pensado para ubicarte en el formato correcto.",
-    steps: [
-      {
-        title: "Postulación",
-        text: "Dejas tus datos y nos cuentas qué estás buscando.",
-      },
-      {
-        title: "Clase 0",
-        text: "Evaluamos tu punto de partida, historial, movilidad y estado técnico.",
-      },
-      {
-        title: "Inicio del proceso",
-        text: "Te integras al formato adecuado: SG, DUO o PT.",
-      },
-    ],
-  },
-  audience: {
-    eyebrow: "Para quién es",
-    title: "ULF es para personas que quieren volver a sentirse capaces.",
-    text:
-      "No necesitas estar en tu mejor estado físico para entrar. Necesitas estar dispuesto a seguir un proceso.",
-    positiveTitle: "ULF puede ser para ti si:",
-    positive: [
-      "Has pagado gimnasios que terminaste abandonando.",
-      "Quieres entrenar, pero necesitas estructura.",
-      "Te importa la técnica y no quieres lesionarte.",
-      "Buscas fuerza, energía y autonomía.",
-      "Prefieres un ambiente reducido, ordenado y no intimidante.",
-    ],
-    note:
-      "ULF no es open gym ni entrenamiento libre. Si buscas solo acceso a máquinas, probablemente este no es el sistema adecuado.",
   },
   waitlist: {
     eyebrow: "Postulación",
