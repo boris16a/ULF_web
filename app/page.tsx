@@ -72,35 +72,32 @@ function FounderSection() {
   return (
     <section id="socios-fundadores" className="bg-transparent py-16 sm:py-20 lg:py-24">
       <div className="section-shell">
-        <div className="surface-card p-6 sm:p-8 lg:p-10">
-          <div className="grid gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:items-end">
+        <div
+          className="relative overflow-hidden p-7 text-[#fff8ed] shadow-[0_24px_80px_rgba(56,45,34,0.16)] sm:p-9 lg:p-12"
+          style={{
+            backgroundImage: `linear-gradient(105deg, rgba(39, 34, 28, 0.88) 0%, rgba(74, 64, 51, 0.72) 46%, rgba(137, 119, 92, 0.28) 76%, rgba(242, 229, 205, 0.12) 100%), url(${siteContent.brand.communityFounderImage})`,
+            backgroundPosition: "center",
+            backgroundSize: "cover",
+          }}
+        >
+          <div className="relative z-10 grid gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:items-end">
             <div>
-              <p className="mb-5 text-sm font-semibold uppercase tracking-[0.24em] text-[#3f513f]">
+              <p className="mb-5 text-sm font-semibold uppercase tracking-[0.24em] text-[#d8e2c5]">
                 {siteContent.founders.eyebrow}
               </p>
-              <h2 className="text-[40px] font-black leading-none text-[#171614] sm:text-6xl lg:text-[68px]">
+              <h2 className="text-[40px] font-black leading-none text-[#fff8ed] sm:text-6xl lg:text-[68px]">
                 {siteContent.founders.title}
               </h2>
             </div>
             <div>
-              <p className="text-2xl font-semibold leading-tight text-[#201e1a] sm:text-3xl">
+              <p className="text-2xl font-semibold leading-tight text-[#fff8ed] sm:text-3xl">
                 {siteContent.founders.statement}
               </p>
-              <p className="mt-5 text-lg leading-8 text-[#4e473e]">
+              <p className="mt-5 max-w-2xl text-lg leading-8 text-[#f0e5d2]">
                 {siteContent.founders.text}
               </p>
             </div>
           </div>
-        </div>
-
-        <div className="image-panel mt-8 aspect-[16/9]">
-          <Image
-            src={siteContent.brand.communityFounderImage}
-            alt="Entrenamiento acompañado en grupos reducidos ULF"
-            fill
-            sizes="(min-width: 1180px) 1180px, 100vw"
-            className="object-cover"
-          />
         </div>
 
         <div className="mt-12">
