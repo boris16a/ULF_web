@@ -26,7 +26,7 @@ function BulletGrid({ items }: { items: string[] }) {
 function ComparisonBlocks() {
   return (
     <div className="grid gap-4 lg:grid-cols-[0.86fr_1.14fr] lg:items-stretch">
-      <article className="surface-card p-6 text-[#4e473e]">
+      <article className="surface-card p-6 text-[#4e473e] lg:p-7">
         <h3 className="text-xl font-semibold text-[#171614]">
           {siteContent.problem.comparisons[0].title}
         </h3>
@@ -39,21 +39,30 @@ function ComparisonBlocks() {
           ))}
         </ul>
       </article>
-      <article className="surface-card border-[#3f513f]/25 bg-[#f8f0e3] p-8 text-[#2f302a]">
-        <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[#3f513f]">
-          Sistema ULF
-        </p>
-        <h3 className="mt-3 text-3xl font-black text-[#171614]">
-          {siteContent.problem.comparisons[1].title}
-        </h3>
-        <ul className="mt-6 space-y-4">
-          {siteContent.problem.comparisons[1].items.map((item) => (
-            <li className="flex gap-3 text-lg" key={item}>
-              <span className="mt-2.5 h-2 w-2 shrink-0 bg-[#3f513f]" />
-              <span>{item}</span>
-            </li>
-          ))}
-        </ul>
+      <article
+        className="relative overflow-hidden p-8 text-[#fff8ed] shadow-[0_22px_70px_rgba(56,45,34,0.16)] lg:p-9"
+        style={{
+          backgroundImage: `linear-gradient(105deg, rgba(29, 27, 24, 0.84), rgba(29, 27, 24, 0.58)), url(${siteContent.brand.consistencySystemImage})`,
+          backgroundPosition: "center",
+          backgroundSize: "cover",
+        }}
+      >
+        <div className="relative z-10">
+          <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[#d8e2c5]">
+            SISTEMA ULF
+          </p>
+          <h3 className="mt-3 text-3xl font-black text-[#fff8ed]">
+            {siteContent.problem.comparisons[1].title}
+          </h3>
+          <ul className="mt-6 space-y-4">
+            {siteContent.problem.comparisons[1].items.map((item) => (
+              <li className="flex gap-3 text-lg" key={item}>
+                <span className="mt-2.5 h-2 w-2 shrink-0 bg-[#d8e2c5]" />
+                <span>{item}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
       </article>
     </div>
   );
@@ -229,18 +238,7 @@ export default function Home() {
           text={siteContent.problem.text}
           tone="muted"
         >
-          <div className="grid gap-6">
-            <div className="image-panel aspect-[16/7]">
-              <Image
-                src={siteContent.brand.consistencyImage}
-                alt="Persona retomando su constancia de entrenamiento en un espacio ULF"
-                fill
-                sizes="(min-width: 1180px) 1180px, 100vw"
-                className="object-cover"
-              />
-            </div>
-            <ComparisonBlocks />
-          </div>
+          <ComparisonBlocks />
         </Section>
 
         <Section
