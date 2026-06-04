@@ -114,12 +114,6 @@ export const siteContent = {
         text:
           "Porque el problema no es solo entrenar. El problema es sostenerlo.\n\nEn ULF, pertenecer no significa venir a un lugar bonito ni compartir una frase motivacional. Significa que tu proceso importa. Si faltas, lo notamos. Si te lesionas, ajustamos. Si estás cansado, adaptamos. Si pierdes continuidad, te acompañamos para volver.\n\nLa manada no es una metáfora decorativa. Es la forma en que entendemos el entrenamiento: seguimiento activo, vínculo real y progreso sostenido.",
       },
-      {
-        title: "Un método",
-        label: "Un método",
-        text:
-          "Evaluación, corrección, registro y acompañamiento para sostener el progreso en el tiempo.\n\nULF no es solo un nombre. Desde ahora es nuestro escudo, un alero, un método donde entrenar es pertenencia y seguimiento real.",
-      },
     ],
   },
   problem: {

@@ -169,24 +169,21 @@ function WolfSection() {
             </p>
           </div>
 
-          <div className="surface-card relative mx-auto w-full max-w-[360px] overflow-hidden p-5 sm:p-6 lg:sticky lg:top-36">
-            <div className="absolute inset-x-0 top-0 h-1 bg-[#3f513f]/50" />
+          <div className="mx-auto flex w-full max-w-[320px] items-center justify-center lg:sticky lg:top-36">
             <Image
               src={siteContent.brand.mainLogo}
               alt="ULF"
               width={420}
               height={240}
-              className="mx-auto h-auto w-full max-w-[230px] object-contain opacity-90 sm:max-w-[260px]"
+              className="h-auto w-full max-w-[240px] object-contain opacity-90 sm:max-w-[280px]"
             />
           </div>
         </div>
 
         <div className="mt-10 grid gap-4 lg:grid-cols-[1fr_1fr]">
-          {siteContent.wolf.blocks.map((block, index) => (
+          {siteContent.wolf.blocks.map((block) => (
             <article
-              className={`surface-card p-6 sm:p-7 ${
-                index === 2 ? "lg:col-span-2 lg:grid lg:grid-cols-[0.32fr_1fr] lg:items-center lg:gap-8" : ""
-              }`}
+              className="surface-card p-6 sm:p-7"
               key={block.title}
             >
               <div>
