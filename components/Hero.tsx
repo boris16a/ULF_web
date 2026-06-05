@@ -70,9 +70,9 @@ export default function Hero() {
             sizes="(min-width: 1180px) 1180px, 100vw"
             className="object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-tr from-[#201e1a]/58 via-[#201e1a]/16 to-transparent" />
-          <div className="absolute bottom-5 left-5 max-w-[360px] bg-[#f7efe1]/88 px-5 py-4 backdrop-blur-sm sm:bottom-7 sm:left-7">
-            <p className="text-xl font-semibold leading-tight text-[#171614] sm:text-2xl">
+          <div className="absolute inset-y-0 right-0 w-3/5 bg-gradient-to-l from-[#201e1a]/42 via-[#201e1a]/16 to-transparent" />
+          <div className="absolute bottom-[18%] right-5 max-w-[390px] text-right sm:right-8 lg:right-10">
+            <p className="text-3xl font-black leading-[0.98] text-[#fff8ed]/95 drop-shadow-[0_3px_18px_rgba(24,22,19,0.62)] sm:text-5xl">
               {siteContent.hero.imageStatement}
             </p>
           </div>
