@@ -83,20 +83,8 @@ function FounderSection() {
           </div>
         </div>
 
-        <div className="mt-12">
-          <div className="max-w-3xl">
-            <p className="text-sm font-semibold uppercase tracking-[0.24em] text-[#3f513f]">
-              Condición fundadora
-            </p>
-            <h3 className="mt-4 text-3xl font-semibold leading-tight text-[#171614] sm:text-4xl">
-              {siteContent.founders.benefitsTitle}
-            </h3>
-            <p className="mt-5 max-w-2xl text-lg leading-8 text-[#4e473e]">
-              {siteContent.founders.statement} {siteContent.founders.text}
-            </p>
-          </div>
-
-          <div className="mt-8 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+        <div className="mt-8">
+          <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
             {siteContent.founders.benefits.map((benefit) => (
               <article className="surface-card p-6" key={benefit.title}>
                 <h4 className="text-xl font-semibold leading-tight text-[#171614]">
