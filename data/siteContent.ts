@@ -43,9 +43,6 @@ export const siteContent = {
   founders: {
     eyebrow: "Primera generación",
     title: "Socios Fundadores ULF",
-    statement: "Ser Socio Fundador no es comprar una promoción.",
-    text:
-      "Es entrar primero a un sistema de entrenamiento estructurado, con cupos limitados, prioridad de horarios y condiciones especiales de preapertura.",
     benefits: [
       {
         title: "Prioridad de horarios",

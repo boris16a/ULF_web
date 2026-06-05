@@ -63,23 +63,13 @@ function FounderSection() {
             backgroundSize: "cover",
           }}
         >
-          <div className="relative z-10 grid gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:items-end">
-            <div>
-              <p className="mb-5 text-sm font-semibold uppercase tracking-[0.24em] text-[#d8e2c5]">
-                {siteContent.founders.eyebrow}
-              </p>
-              <h2 className="text-[40px] font-black leading-none text-[#fff8ed] sm:text-6xl lg:text-[68px]">
-                {siteContent.founders.title}
-              </h2>
-            </div>
-            <div>
-              <p className="text-2xl font-semibold leading-tight text-[#fff8ed] sm:text-3xl">
-                {siteContent.founders.statement}
-              </p>
-              <p className="mt-5 max-w-2xl text-lg leading-8 text-[#f0e5d2]">
-                {siteContent.founders.text}
-              </p>
-            </div>
+          <div className="relative z-10 max-w-3xl">
+            <p className="mb-5 text-sm font-semibold uppercase tracking-[0.24em] text-[#d8e2c5]">
+              {siteContent.founders.eyebrow}
+            </p>
+            <h2 className="text-[40px] font-black leading-none text-[#fff8ed] sm:text-6xl lg:text-[68px]">
+              {siteContent.founders.title}
+            </h2>
           </div>
         </div>
 
