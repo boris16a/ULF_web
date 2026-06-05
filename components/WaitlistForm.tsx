@@ -151,6 +151,9 @@ export default function WaitlistForm() {
       <button className="btn-primary w-full" type="submit">
         {siteContent.cta.primary}
       </button>
+      <p className="whitespace-pre-line text-sm font-semibold leading-6 text-[#4e473e]">
+        {siteContent.waitlist.microcopy}
+      </p>
       <p className="text-xs leading-5 text-[#6f675d]">{siteContent.waitlist.legal}</p>
     </form>
   );

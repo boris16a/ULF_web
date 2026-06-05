@@ -15,8 +15,10 @@ export default function Footer() {
               className="h-auto w-40 object-contain"
             />
           </div>
-          <p className="mt-5 text-sm text-[#4e473e]">{siteContent.brand.descriptor}</p>
-          <p className="mt-3 text-xs text-[#6f675d]">{siteContent.brand.preOpening}</p>
+          <p className="mt-5 text-sm font-semibold text-[#4e473e]">
+            {siteContent.brand.name} · {siteContent.brand.descriptor}
+          </p>
+          <p className="mt-3 text-xs leading-5 text-[#6f675d]">{siteContent.brand.address}</p>
         </div>
         <nav className="flex flex-wrap gap-5 text-sm text-[#4e473e]" aria-label="Footer">
           <a className="transition hover:text-[#171614]" href="#socios-fundadores">

@@ -26,6 +26,9 @@ export default function Hero() {
           <p className="mt-4 whitespace-pre-line text-sm leading-6 text-[#6f675d]">
             {siteContent.hero.primaryMicrocopy}
           </p>
+          <p className="mt-3 text-sm font-semibold text-[#3f513f]">
+            {siteContent.brand.locationShort}
+          </p>
         </div>
 
         <div className="relative z-10">
@@ -67,6 +70,12 @@ export default function Hero() {
             sizes="(min-width: 1180px) 1180px, 100vw"
             className="object-cover"
           />
+          <div className="absolute inset-0 bg-gradient-to-tr from-[#201e1a]/58 via-[#201e1a]/16 to-transparent" />
+          <div className="absolute bottom-5 left-5 max-w-[360px] bg-[#f7efe1]/88 px-5 py-4 backdrop-blur-sm sm:bottom-7 sm:left-7">
+            <p className="text-xl font-semibold leading-tight text-[#171614] sm:text-2xl">
+              {siteContent.hero.imageStatement}
+            </p>
+          </div>
         </div>
       </div>
     </section>

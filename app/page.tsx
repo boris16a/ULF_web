@@ -86,11 +86,14 @@ function FounderSection() {
         <div className="mt-12">
           <div className="max-w-3xl">
             <p className="text-sm font-semibold uppercase tracking-[0.24em] text-[#3f513f]">
-              {siteContent.founders.benefitsTitle}
+              Condición fundadora
             </p>
             <h3 className="mt-4 text-3xl font-semibold leading-tight text-[#171614] sm:text-4xl">
-              Beneficios pensados para iniciar con prioridad y continuidad.
+              {siteContent.founders.benefitsTitle}
             </h3>
+            <p className="mt-5 max-w-2xl text-lg leading-8 text-[#4e473e]">
+              {siteContent.founders.statement} {siteContent.founders.text}
+            </p>
           </div>
 
           <div className="mt-8 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
@@ -164,7 +167,7 @@ function WolfSection() {
               alt="ULF"
               width={420}
               height={240}
-              className="h-auto w-full max-w-[240px] object-contain opacity-90 sm:max-w-[280px]"
+              className="h-auto w-full max-w-[280px] object-contain opacity-90 sm:max-w-[340px]"
             />
           </div>
         </div>
@@ -239,7 +242,10 @@ export default function Home() {
                   Accede primero a información de pre-apertura, horarios disponibles y condiciones fundadoras.
                 </p>
                 <p className="mt-5 leading-8 text-[#4e473e]">
-                  Recibirás información prioritaria sobre horarios, formatos disponibles y condiciones fundadoras antes de la apertura general.
+                  Recibirás información prioritaria sobre horarios, planes disponibles y condiciones fundadoras antes de la apertura general.
+                </p>
+                <p className="mt-5 text-sm font-semibold leading-6 text-[#3f513f]">
+                  {siteContent.waitlist.location}
                 </p>
               </div>
             </div>

@@ -3,7 +3,9 @@ export const siteContent = {
     name: "ULF",
     descriptor: "Centro de Entrenamiento Estructurado.",
     headerDescriptor: "Centro boutique",
-    preOpening: "Pre-apertura ULF · Cupos limitados para Socios Fundadores",
+    preOpening: "Preapertura ULF · Ñuñoa · 65 cupos para Socios Fundadores",
+    locationShort: "Preapertura en Ñuñoa · Av. Pedro de Valdivia 3774, local N°4",
+    address: "Av. Pedro de Valdivia 3774, local N°4, Ñuñoa.",
     mainLogo: "/images/ULF_logo.png",
     headerLogo: "/images/ULF_logo2.png",
     docsLogo: "/images/ULF_logo_docs.png",
@@ -29,9 +31,10 @@ export const siteContent = {
     kicker: "SOCIOS FUNDADORES ULF",
     title: "Sé parte de la primera generación ULF.",
     subtitle:
-      "Postula como Socio Fundador y accede a beneficios especiales de pre-apertura: prioridad de horarios, condición fundador, pack de bienvenida y acceso anticipado a la primera manada ULF.",
+      "Postula como Socio Fundador y accede a beneficios especiales de preapertura: prioridad de horarios, descuentos exclusivos en planes de continuidad, pack fundador y acceso anticipado al sistema ULF.",
     primaryMicrocopy:
-      "Primera generación limitada a 65 Socios Fundadores.\nLos cupos se asignarán por orden de postulación.",
+      "Primera generación limitada a 65 Socios Fundadores.\nLos cupos se asignarán por orden de postulación y contratación del plan.",
+    imageStatement: "Esta vez, empieza con estructura.",
     secondaryMicrocopy: "Conoce los beneficios de Socios Fundadores.",
     note:
       "Cupos limitados de pre-apertura. Acceso anticipado a horarios, condiciones fundadoras y Clase 0 inicial.",
@@ -43,31 +46,31 @@ export const siteContent = {
     statement: "Ser Socio Fundador no es comprar una promoción.",
     text:
       "Es entrar primero a un sistema de entrenamiento estructurado, con cupos limitados, prioridad de horarios y condiciones especiales de preapertura.",
-    benefitsTitle: "Beneficios fundadores",
+    benefitsTitle: "Beneficios Socios Fundadores ULF",
     benefits: [
       {
-        title: "Prioridad para elegir horarios",
-        text: "Los Socios Fundadores tendrán primera opción para tomar cupos en los bloques disponibles durante la etapa inicial.",
+        title: "Prioridad de horarios",
+        text: "Elige primero dentro de los bloques disponibles de preapertura.",
       },
       {
-        title: "Descuentos exclusivos en planes de continuidad",
-        text: "Acceso a condiciones especiales en planes trimestrales, semestrales y anuales. A mayor compromiso inicial, mayor beneficio fundador.",
+        title: "Descuentos en planes de continuidad",
+        text: "Beneficios exclusivos en planes trimestrales, semestrales y anuales.",
       },
       {
         title: "Condición fundador renovable",
-        text: "Los Socios Fundadores con plan semestral o anual podrán mantener su condición fundador en futuras renovaciones, siempre que mantengan continuidad activa.",
+        text: "Disponible para planes semestrales y anuales mientras mantengas continuidad activa.",
       },
       {
         title: "Pack Fundador ULF",
-        text: "Quienes contraten planes desde 3 meses recibirán un pack de bienvenida ULF. El contenido será informado durante la etapa de inscripción.",
+        text: "Símbolo de bienvenida para quienes ingresan desde la primera generación.",
       },
       {
-        title: "Clase 0 fundacional incluida",
-        text: "Evaluación inicial, estado técnico y orientación de ingreso al sistema ULF, sin descontar sesiones del plan.",
+        title: "Clase 0 incluida",
+        text: "Evaluación fundacional inicial sin descontar sesiones del plan.",
       },
       {
         title: "Primera Generación ULF",
-        text: "Ser parte del primer grupo que inicia el sistema ULF, con acceso preferente a horarios, formatos disponibles y beneficios fundadores.",
+        text: "Reconocimiento como parte del grupo inicial que abre el sistema.",
       },
     ],
     conversion: {
@@ -82,9 +85,9 @@ export const siteContent = {
   },
   wolf: {
     eyebrow: "IDENTIDAD",
-    title: "ULF, hogar de lobos",
+    title: "ULF, hogar de lobos.",
     subtitle:
-      "El nacimiento de un método creado para sostener cambios y cumplir objetivos con el rol principal de acompañar.",
+      "ULF nace del símbolo del lobo: dirección, pertenencia y adaptación.",
     text:
       "ULF, literalmente significa lobo en escandinavo. La idea surge de ULFHEIM, hogar de lobos, donde la manada representa dirección, pertenencia y adaptación. Un hogar es justamente donde las condiciones se hacen ideales para que cada persona avance con método, acompañamiento y continuidad.",
     blocks: [
@@ -132,7 +135,10 @@ export const siteContent = {
     eyebrow: "Postulación",
     title: "Postula a Socio Fundador ULF",
     text:
-      "Déjanos tus datos y te contactaremos con la información de pre-apertura, horarios disponibles y condiciones fundadoras.",
+      "Déjanos tus datos y te contactaremos con información de horarios, planes disponibles y condiciones fundadoras.",
+    microcopy:
+      "Postular no asegura cupo.\nLa reserva se confirma según disponibilidad, contacto comercial y contratación del plan.",
+    location: "Ubicación: Av. Pedro de Valdivia 3774, local N°4, Ñuñoa.",
     legal:
       "Te contactaremos solo con información relacionada a ULF. No enviaremos spam.",
     fields: {
