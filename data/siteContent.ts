@@ -46,7 +46,6 @@ export const siteContent = {
     statement: "Ser Socio Fundador no es comprar una promoción.",
     text:
       "Es entrar primero a un sistema de entrenamiento estructurado, con cupos limitados, prioridad de horarios y condiciones especiales de preapertura.",
-    benefitsTitle: "Beneficios Socios Fundadores ULF",
     benefits: [
       {
         title: "Prioridad de horarios",
