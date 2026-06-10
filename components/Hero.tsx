@@ -1,4 +1,5 @@
 import Image from "next/image";
+import WhatsAppButton from "@/components/WhatsAppButton";
 import { siteContent } from "@/data/siteContent";
 
 export default function Hero() {
@@ -19,9 +20,10 @@ export default function Hero() {
             <a href="#postular" className="btn-primary w-full sm:w-auto">
               {siteContent.cta.primary}
             </a>
-            <a href="#socios-fundadores" className="btn-secondary w-full sm:w-auto">
-              {siteContent.cta.secondary}
-            </a>
+            <WhatsAppButton
+              label={siteContent.whatsapp.heroLabel}
+              className="w-full sm:w-auto"
+            />
           </div>
           <p className="mt-4 whitespace-pre-line text-sm leading-6 text-steel-light">
             {siteContent.hero.primaryMicrocopy}

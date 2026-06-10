@@ -23,9 +23,21 @@ export const siteContent = {
   ],
   cta: {
     primary: "Postular a Socio Fundador",
-    secondary: "Ver beneficios fundadores",
+    secondary: "Revisar cupos por WhatsApp",
     tertiary: "Quiero ser parte de la primera generación ULF",
     reserve: "Reservar cupo de pre-apertura",
+  },
+  whatsapp: {
+    number: "WHATSAPP_NUMBER",
+    message:
+      "Hola, quiero revisar cupos disponibles para Socio Fundador ULF. Me interesa recibir orientación sobre formato, horario y planes.",
+    heroLabel: "Revisar cupos por WhatsApp",
+    consultTitle: "¿No sabes qué formato elegir?",
+    consultText:
+      "Te orientamos según tu horario, experiencia previa y objetivo inicial.",
+    consultLabel: "Recibir orientación de ingreso",
+    successLabel: "Revisar cupos por WhatsApp",
+    mobileLabel: "Revisar cupos",
   },
   hero: {
     kicker: "SOCIOS FUNDADORES ULF",
@@ -165,7 +177,7 @@ export const siteContent = {
     ],
     founderOptions: ["Sí", "Quiero más información primero"],
     success:
-      "Gracias. Recibimos tu postulación simulada. El formulario queda listo para conectar luego con Google Forms, Airtable, Typeform, Supabase o CRM.",
+      "Postulación recibida.\nTe contactaremos por WhatsApp para revisar formato, horario disponible y condiciones fundadoras.",
   },
   closing: {
     title:

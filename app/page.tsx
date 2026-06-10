@@ -5,6 +5,7 @@ import Image from "next/image";
 import PreopeningStatus from "@/components/PreopeningStatus";
 import Section from "@/components/Section";
 import WaitlistForm from "@/components/WaitlistForm";
+import WhatsAppButton from "@/components/WhatsAppButton";
 import { siteContent } from "@/data/siteContent";
 
 function ComparisonBlocks() {
@@ -112,6 +113,19 @@ function FounderSection() {
               <p className="mt-4 whitespace-pre-line text-sm leading-6 text-silver-cold/80">
                 {siteContent.founders.conversion.microcopy}
               </p>
+              <div className="mt-7 border-t border-steel-dark/35 pt-6">
+                <p className="text-lg font-semibold text-foreground">
+                  {siteContent.whatsapp.consultTitle}
+                </p>
+                <p className="mt-2 max-w-xl leading-7 text-silver-cold">
+                  {siteContent.whatsapp.consultText}
+                </p>
+                <WhatsAppButton
+                  label={siteContent.whatsapp.consultLabel}
+                  variant="text"
+                  className="mt-4"
+                />
+              </div>
             </div>
           </article>
         </div>
@@ -247,6 +261,10 @@ export default function Home() {
           </div>
         </section>
       </main>
+      <WhatsAppButton
+        label={siteContent.whatsapp.mobileLabel}
+        variant="floating"
+      />
       <Footer />
     </>
   );

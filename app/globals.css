@@ -167,3 +167,13 @@ a {
   background: var(--color-petrol);
   box-shadow: 0 22px 70px rgba(0, 0, 0, 0.4);
 }
+
+.whatsapp-float {
+  bottom: calc(1rem + env(safe-area-inset-bottom));
+}
+
+@media (max-width: 767px) {
+  body {
+    padding-bottom: calc(4.75rem + env(safe-area-inset-bottom));
+  }
+}

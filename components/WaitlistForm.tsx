@@ -1,6 +1,7 @@
 "use client";
 
 import { FormEvent, useState } from "react";
+import WhatsAppButton from "@/components/WhatsAppButton";
 import { siteContent } from "@/data/siteContent";
 
 type FormState = {
@@ -147,9 +148,16 @@ export default function WaitlistForm() {
         </p>
       ) : null}
       {success ? (
-        <p className="border border-steel-brand/40 bg-steel-brand/15 p-4 text-sm leading-6 text-silver-cold">
-          {siteContent.waitlist.success}
-        </p>
+        <div className="border border-steel-brand/40 bg-steel-brand/15 p-4">
+          <p className="whitespace-pre-line text-sm leading-6 text-silver-cold">
+            {siteContent.waitlist.success}
+          </p>
+          <WhatsAppButton
+            label={siteContent.whatsapp.successLabel}
+            variant="text"
+            className="mt-3 text-sm"
+          />
+        </div>
       ) : null}
 
       <button className="btn-primary w-full" type="submit">
