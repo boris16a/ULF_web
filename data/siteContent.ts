@@ -40,6 +40,14 @@ export const siteContent = {
       "Cupos limitados de pre-apertura. Acceso anticipado a horarios, condiciones fundadoras y Clase 0 inicial.",
     metrics: ["Evaluación", "Corrección", "Seguimiento"],
   },
+  preopeningStatus: {
+    label: "Estado de Preapertura",
+    title: "Primera generación ULF",
+    reserved: 0,
+    total: 65,
+    secondaryText:
+      "Cupos limitados por formato y horario.\nLa condición fundador se confirma con plan seleccionado y reserva registrada.",
+  },
   founders: {
     eyebrow: "Primera generación",
     title: "Socios Fundadores ULF",

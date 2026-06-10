@@ -2,6 +2,7 @@ import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import Image from "next/image";
+import PreopeningStatus from "@/components/PreopeningStatus";
 import Section from "@/components/Section";
 import WaitlistForm from "@/components/WaitlistForm";
 import { siteContent } from "@/data/siteContent";
@@ -182,6 +183,7 @@ export default function Home() {
       <Header />
       <main>
         <Hero />
+        <PreopeningStatus />
         <FounderSection />
         <WolfSection />
 
