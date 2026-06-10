@@ -28,7 +28,7 @@ export const siteContent = {
     reserve: "Reservar cupo de pre-apertura",
   },
   whatsapp: {
-    number: "WHATSAPP_NUMBER",
+    number: "56928513205",
     message:
       "Hola, quiero revisar cupos disponibles para Socio Fundador ULF. Me interesa recibir orientación sobre formato, horario y planes.",
     heroLabel: "Revisar cupos por WhatsApp",
