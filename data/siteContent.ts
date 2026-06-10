@@ -99,6 +99,57 @@ export const siteContent = {
         "Primera generación limitada a 65 Socios Fundadores.\nCupos sujetos a disponibilidad por formato, horario y contratación del plan.",
     },
   },
+  founderPlans: {
+    title: "Planes Fundadores",
+    text:
+      "La condición fundador aplica a los formatos SG, DUO y PT. Cada formato responde a un nivel distinto de acompañamiento, pero todos operan bajo el mismo método: evaluación inicial, corrección técnica, registro y seguimiento.",
+    formats: [
+      {
+        code: "SG",
+        title: "SG — Small Group estructurado",
+        label: "Formato base del sistema",
+        text:
+          "Entrenamiento en grupo reducido, con corrección técnica, progresión y seguimiento individual dentro de una sesión compartida.",
+        ideal:
+          "Quienes buscan constancia, estructura y acompañamiento sin entrenar solos.",
+        frequency: "8, 12 o 16 sesiones al mes.",
+        featured: true,
+      },
+      {
+        code: "DUO",
+        title: "DUO — Entrenamiento en dupla",
+        text:
+          "Formato de mayor acompañamiento técnico para quienes necesitan más ajuste, confianza inicial o un proceso más personalizado.",
+        ideal:
+          "Personas que vienen de inactividad, molestias, inseguridad técnica o buscan avanzar con más atención.",
+        frequency: "4, 8 o 12 sesiones al mes.",
+        featured: false,
+      },
+      {
+        code: "PT",
+        title: "PT — Personal Training",
+        text:
+          "Entrenamiento personalizado para objetivos específicos, readaptación, casos particulares o máxima precisión técnica.",
+        ideal:
+          "Quienes requieren un proceso individual, mayor control de variables o acompañamiento específico.",
+        frequency: "4, 8 o 12 sesiones al mes.",
+        featured: false,
+      },
+    ],
+    permanence: {
+      title: "Beneficio fundador por permanencia",
+      featuredText:
+        "La condición fundador premia continuidad, no negociación por precio.",
+      text:
+        "Los mayores beneficios se aplican en planes trimestrales, semestrales y anuales. Mientras mayor permanencia inicial, mayor prioridad y mejores condiciones fundadoras.",
+      options: [
+        "Mensual: ingreso flexible, beneficio limitado.",
+        "Trimestral: condición fundador inicial y pack básico.",
+        "Semestral: mayor beneficio fundador y condición renovable.",
+        "Anual: máximo beneficio fundador y condición renovable.",
+      ],
+    },
+  },
   wolf: {
     eyebrow: "IDENTIDAD",
     title: "ULF, hogar de lobos.",

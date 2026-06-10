@@ -1,4 +1,5 @@
 import Footer from "@/components/Footer";
+import FounderPlansSection from "@/components/FounderPlansSection";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import Image from "next/image";
@@ -113,19 +114,6 @@ function FounderSection() {
               <p className="mt-4 whitespace-pre-line text-sm leading-6 text-silver-cold/80">
                 {siteContent.founders.conversion.microcopy}
               </p>
-              <div className="mt-7 border-t border-steel-dark/35 pt-6">
-                <p className="text-lg font-semibold text-foreground">
-                  {siteContent.whatsapp.consultTitle}
-                </p>
-                <p className="mt-2 max-w-xl leading-7 text-silver-cold">
-                  {siteContent.whatsapp.consultText}
-                </p>
-                <WhatsAppButton
-                  label={siteContent.whatsapp.consultLabel}
-                  variant="text"
-                  className="mt-4"
-                />
-              </div>
             </div>
           </article>
         </div>
@@ -199,6 +187,7 @@ export default function Home() {
         <Hero />
         <PreopeningStatus />
         <FounderSection />
+        <FounderPlansSection />
         <WolfSection />
 
         <Section
