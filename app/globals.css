@@ -1,17 +1,14 @@
 @import "tailwindcss";
 
-:root {
-  --background: #eee8dc;
-  --foreground: #171614;
-  --muted: #6f675d;
-  --panel: #faf5eb;
-  --panel-strong: #201e1a;
-  --line: rgba(35, 32, 28, 0.14);
-  --accent: #6d775c;
-  --accent-strong: #3f513f;
-  --petrol: #264e50;
-  --terracotta: #ad7256;
-  --bone: #f7efe1;
+@theme {
+  /* Paleta oficial ULF — única fuente de verdad para colores del sitio */
+  --color-graphite: #1a1e21; /* Grafito profundo — fondo principal */
+  --color-petrol: #353d41; /* Azul petróleo oscuro — fondos secundarios, tarjetas, overlays */
+  --color-steel-dark: #50646f; /* Acero oscuro — bordes, líneas, íconos, soporte */
+  --color-steel-brand: #637984; /* Azul acero medio — marca: botones, titulares, navegación */
+  --color-steel-light: #8ba2ad; /* Azul acero claro — acento premium, reflejos */
+  --color-silver-cold: #a2bac4; /* Plata fría — brillos, líneas finas, lujo */
+  --color-foreground: #eef3f6; /* Texto principal sobre fondos oscuros */
 }
 
 * {
@@ -28,10 +25,10 @@ body {
   overflow-x: hidden;
   position: relative;
   background:
-    radial-gradient(circle at 12% 0%, rgba(173, 114, 86, 0.18), transparent 32rem),
-    radial-gradient(circle at 92% 18%, rgba(63, 81, 63, 0.18), transparent 30rem),
-    linear-gradient(180deg, #f7efe1 0%, var(--background) 54%, #e1d6c5 100%);
-  color: var(--foreground);
+    radial-gradient(circle at 12% 0%, rgba(99, 121, 132, 0.16), transparent 32rem),
+    radial-gradient(circle at 92% 18%, rgba(80, 100, 111, 0.14), transparent 30rem),
+    linear-gradient(180deg, #20262a 0%, var(--color-graphite) 54%, #15181b 100%);
+  color: var(--color-foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -45,8 +42,8 @@ body::before {
   background-position: center 46%;
   background-repeat: no-repeat;
   background-size: min(92vw, 1040px);
-  filter: grayscale(1);
-  opacity: 0.055;
+  filter: grayscale(1) brightness(1.12) contrast(0.88);
+  opacity: 0.045;
 }
 
 header,
@@ -57,8 +54,8 @@ footer {
 }
 
 body::selection {
-  background: var(--accent-strong);
-  color: #111312;
+  background: var(--color-steel-brand);
+  color: #ffffff;
 }
 
 button,
@@ -80,34 +77,34 @@ a {
 
 .soft-grid {
   background-image:
-    linear-gradient(rgba(35, 32, 28, 0.055) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(35, 32, 28, 0.055) 1px, transparent 1px);
+    linear-gradient(rgba(162, 186, 196, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(162, 186, 196, 0.05) 1px, transparent 1px);
   background-size: 44px 44px;
 }
 
 .field {
   min-height: 50px;
   width: 100%;
-  border: 1px solid rgba(35, 32, 28, 0.16);
-  background: rgba(255, 252, 245, 0.76);
+  border: 1px solid rgba(80, 100, 111, 0.55);
+  background: rgba(53, 61, 65, 0.65);
   padding: 0 14px;
-  color: #171614;
+  color: var(--color-foreground);
   outline: none;
   border-radius: 2px;
 }
 
 .field:focus {
-  border-color: var(--accent-strong);
-  box-shadow: 0 0 0 3px rgba(63, 81, 63, 0.16);
+  border-color: var(--color-steel-light);
+  box-shadow: 0 0 0 3px rgba(139, 162, 173, 0.18);
 }
 
 .field::placeholder {
-  color: #8a8074;
+  color: rgba(162, 186, 196, 0.55);
 }
 
 .field option {
-  background: #fffaf0;
-  color: #171614;
+  background: var(--color-petrol);
+  color: var(--color-foreground);
 }
 
 .btn-primary {
@@ -115,18 +112,19 @@ a {
   min-height: 48px;
   align-items: center;
   justify-content: center;
-  border: 1px solid #1d1b18;
-  background: #1d1b18;
+  border: 1px solid var(--color-steel-brand);
+  background: linear-gradient(135deg, var(--color-steel-brand), #718995);
   padding: 0 24px;
-  color: #fff7ea;
+  color: #ffffff;
   font-weight: 700;
   text-align: center;
-  transition: background 180ms ease, border-color 180ms ease, transform 180ms ease;
+  transition: background 180ms ease, border-color 180ms ease, color 180ms ease, transform 180ms ease;
 }
 
 .btn-primary:hover {
-  background: #3f513f;
-  border-color: #3f513f;
+  background: linear-gradient(135deg, var(--color-steel-light), var(--color-silver-cold));
+  border-color: var(--color-steel-light);
+  color: var(--color-graphite);
   transform: translateY(-1px);
 }
 
@@ -135,33 +133,37 @@ a {
   min-height: 48px;
   align-items: center;
   justify-content: center;
-  border: 1px solid rgba(35, 32, 28, 0.2);
-  background: rgba(255, 250, 240, 0.5);
+  border: 1px solid rgba(139, 162, 173, 0.45);
+  background: rgba(53, 61, 65, 0.5);
   padding: 0 24px;
-  color: #1d1b18;
+  color: var(--color-foreground);
   font-weight: 700;
   text-align: center;
   transition: background 180ms ease, border-color 180ms ease, transform 180ms ease;
 }
 
 .btn-secondary:hover {
-  border-color: rgba(63, 81, 63, 0.5);
-  background: rgba(63, 81, 63, 0.1);
+  border-color: var(--color-steel-light);
+  background: rgba(139, 162, 173, 0.12);
   transform: translateY(-1px);
 }
 
 .surface-card {
-  border: 1px solid rgba(35, 32, 28, 0.12);
+  border: 1px solid rgba(80, 100, 111, 0.35);
   background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.34), rgba(255, 255, 255, 0.08)),
-    #f3eadc;
-  box-shadow: 0 18px 60px rgba(56, 45, 34, 0.08);
+    linear-gradient(180deg, rgba(162, 186, 196, 0.06), rgba(162, 186, 196, 0.02)),
+    var(--color-petrol);
+  box-shadow: 0 18px 60px rgba(0, 0, 0, 0.35);
+}
+
+.surface-card:hover {
+  border-color: rgba(139, 162, 173, 0.48);
 }
 
 .image-panel {
   position: relative;
   overflow: hidden;
-  border: 1px solid rgba(35, 32, 28, 0.12);
-  background: #e2d8ca;
-  box-shadow: 0 22px 70px rgba(56, 45, 34, 0.1);
+  border: 1px solid rgba(80, 100, 111, 0.35);
+  background: var(--color-petrol);
+  box-shadow: 0 22px 70px rgba(0, 0, 0, 0.4);
 }

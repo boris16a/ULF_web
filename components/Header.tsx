@@ -3,9 +3,9 @@ import { siteContent } from "@/data/siteContent";
 
 export default function Header() {
   return (
-    <header className="sticky top-0 z-50 bg-[#f7efe1]/92 backdrop-blur-xl">
-      <div className="bg-[#201e1a] py-3 sm:py-3.5">
-        <div className="section-shell text-center text-xs font-semibold uppercase tracking-[0.18em] text-[#e8dccb] sm:text-[13px]">
+    <header className="sticky top-0 z-50 border-b border-steel-dark/25 bg-graphite/92 backdrop-blur-xl">
+      <div className="bg-petrol py-3 sm:py-3.5">
+        <div className="section-shell text-center text-xs font-semibold uppercase tracking-[0.18em] text-silver-cold sm:text-[13px]">
           {siteContent.brand.preOpening}
         </div>
       </div>
@@ -22,7 +22,7 @@ export default function Header() {
             />
           </span>
           <span className="hidden min-w-0 sm:block">
-            <span className="block max-w-[170px] text-xs font-semibold uppercase leading-5 tracking-[0.18em] text-[#6f675d]">
+            <span className="block max-w-[170px] text-xs font-semibold uppercase leading-5 tracking-[0.18em] text-steel-light">
               {siteContent.brand.headerDescriptor}
             </span>
           </span>
@@ -31,7 +31,7 @@ export default function Header() {
         <nav className="hidden items-center gap-8 lg:flex" aria-label="Navegación principal">
           {siteContent.nav.map((item) => (
             <a
-              className="text-sm font-medium text-[#3b3730] transition hover:text-[#11100e]"
+              className="text-sm font-medium text-silver-cold transition hover:text-white"
               href={item.href}
               key={item.href}
             >
@@ -48,7 +48,7 @@ export default function Header() {
       <nav className="section-shell flex gap-5 overflow-x-auto py-3 lg:hidden">
         {siteContent.nav.map((item) => (
           <a
-            className="shrink-0 text-sm font-medium text-[#4e473e]"
+            className="shrink-0 text-sm font-medium text-silver-cold"
             href={item.href}
             key={item.href}
           >
