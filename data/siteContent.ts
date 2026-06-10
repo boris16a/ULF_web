@@ -143,10 +143,26 @@ export const siteContent = {
       text:
         "Los mayores beneficios se aplican en planes trimestrales, semestrales y anuales. Mientras mayor permanencia inicial, mayor prioridad y mejores condiciones fundadoras.",
       options: [
-        "Mensual: ingreso flexible, beneficio limitado.",
-        "Trimestral: condición fundador inicial y pack básico.",
-        "Semestral: mayor beneficio fundador y condición renovable.",
-        "Anual: máximo beneficio fundador y condición renovable.",
+        {
+          title: "Mensual",
+          text: "Ingreso flexible, beneficio limitado.",
+          tone: "steel",
+        },
+        {
+          title: "Trimestral",
+          text: "Condición fundador inicial y pack básico.",
+          tone: "bronze",
+        },
+        {
+          title: "Semestral",
+          text: "Mayor beneficio fundador y condición renovable.",
+          tone: "silver",
+        },
+        {
+          title: "Anual",
+          text: "Máximo beneficio fundador y condición renovable.",
+          tone: "gold",
+        },
       ],
     },
   },
