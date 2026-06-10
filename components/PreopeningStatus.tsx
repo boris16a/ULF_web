@@ -14,7 +14,7 @@ export default function PreopeningStatus() {
     >
       <div className="section-shell">
         <div className="border border-steel-dark/40 bg-petrol/70 p-6 shadow-[0_18px_60px_rgba(0,0,0,0.22)] sm:p-8 lg:grid lg:grid-cols-[0.82fr_1.18fr] lg:items-center lg:gap-12 lg:p-10">
-          <div>
+          <div className="min-w-0">
             <p className="text-xs font-semibold uppercase tracking-[0.24em] text-steel-light">
               {label}
             </p>
@@ -24,12 +24,12 @@ export default function PreopeningStatus() {
             >
               {title}
             </h2>
-            <p className="mt-5 text-xl font-semibold text-silver-cold sm:text-2xl">
-              {reserved} / {total} Socios Fundadores reservados
-            </p>
           </div>
 
-          <div className="mt-8 lg:mt-0">
+          <div className="mt-8 min-w-0 lg:mt-0">
+            <p className="mb-4 max-w-full text-lg font-semibold leading-tight text-silver-cold sm:text-2xl">
+              {reserved} / {total} Socios Fundadores reservados
+            </p>
             <div
               role="progressbar"
               aria-label="Socios Fundadores reservados"

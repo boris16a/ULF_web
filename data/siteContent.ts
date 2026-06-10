@@ -43,7 +43,7 @@ export const siteContent = {
   preopeningStatus: {
     label: "Estado de Preapertura",
     title: "Primera generación ULF",
-    reserved: 0,
+    reserved: 8,
     total: 65,
     secondaryText:
       "Cupos limitados por formato y horario.\nLa condición fundador se confirma con plan seleccionado y reserva registrada.",
