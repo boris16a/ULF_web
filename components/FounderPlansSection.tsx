@@ -51,6 +51,25 @@ function WolfMark({ className }: { className: string }) {
   );
 }
 
+function ArrowIcon({ direction }: { direction: "left" | "right" }) {
+  return (
+    <svg
+      aria-hidden="true"
+      viewBox="0 0 24 24"
+      className="h-5 w-5"
+      fill="none"
+    >
+      <path
+        d={direction === "left" ? "m15 18-6-6 6-6" : "m9 6 6 6-6 6"}
+        stroke="currentColor"
+        strokeWidth="1.8"
+        strokeLinecap="square"
+        strokeLinejoin="miter"
+      />
+    </svg>
+  );
+}
+
 export default function FounderPlansSection() {
   const { founderPlans, whatsapp } = siteContent;
   const [activeIndex, setActiveIndex] = useState(0);
@@ -117,18 +136,36 @@ export default function FounderPlansSection() {
           onTouchStart={handleTouchStart}
           onTouchEnd={handleTouchEnd}
         >
+          <button
+            type="button"
+            aria-label="Formato anterior"
+            className="absolute left-0 top-1/2 z-40 hidden h-12 w-12 -translate-y-1/2 items-center justify-center border border-steel-light/35 bg-petrol/45 text-silver-cold opacity-70 shadow-[0_10px_28px_rgba(0,0,0,0.2)] backdrop-blur-sm transition-[background-color,border-color,opacity,transform] duration-300 hover:border-steel-light/55 hover:bg-steel-brand/65 hover:opacity-100 focus-visible:border-steel-light focus-visible:outline-none lg:flex"
+            onClick={activatePrevious}
+          >
+            <ArrowIcon direction="left" />
+          </button>
+
+          <button
+            type="button"
+            aria-label="Formato siguiente"
+            className="absolute right-0 top-1/2 z-40 hidden h-12 w-12 -translate-y-1/2 items-center justify-center border border-steel-light/35 bg-petrol/45 text-silver-cold opacity-70 shadow-[0_10px_28px_rgba(0,0,0,0.2)] backdrop-blur-sm transition-[background-color,border-color,opacity,transform] duration-300 hover:border-steel-light/55 hover:bg-steel-brand/65 hover:opacity-100 focus-visible:border-steel-light focus-visible:outline-none lg:flex"
+            onClick={activateNext}
+          >
+            <ArrowIcon direction="right" />
+          </button>
+
           {founderPlans.formats.map((format, index) => {
             const position = getCardPosition(index, activeIndex);
             const isActive = position === "center";
 
             return (
               <article
-                className={`absolute left-1/2 top-4 flex h-[530px] w-[calc(100%-3rem)] cursor-pointer flex-col border bg-petrol p-6 shadow-[0_20px_65px_rgba(0,0,0,0.36)] transition-[transform,opacity,border-color] duration-500 ease-out motion-reduce:transition-none sm:h-[510px] sm:w-[76%] sm:p-7 lg:h-[530px] lg:w-[42%] ${
+                className={`absolute left-1/2 top-4 flex h-[530px] w-[calc(100%-3rem)] cursor-pointer flex-col border bg-petrol p-6 shadow-[0_20px_65px_rgba(0,0,0,0.36)] transition-[transform,opacity,border-color,box-shadow] duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] will-change-transform motion-reduce:transition-none sm:h-[510px] sm:w-[76%] sm:p-7 lg:h-[530px] lg:w-[42%] ${
                   positionClasses[position]
                 } ${
                   isActive
                     ? "border-steel-light/70"
-                    : "border-steel-dark/35 hover:opacity-80"
+                    : "border-steel-dark/35 hover:border-steel-light/45 hover:opacity-70"
                 }`}
                 key={format.code}
                 role="button"
@@ -136,7 +173,6 @@ export default function FounderPlansSection() {
                 aria-current={isActive ? "true" : undefined}
                 aria-pressed={isActive}
                 aria-label={`${format.title}${isActive ? ", formato activo" : ""}`}
-                onMouseEnter={() => setActiveIndex(index)}
                 onClick={() => setActiveIndex(index)}
                 onFocus={() => setActiveIndex(index)}
                 onKeyDown={handleKeyDown}
@@ -178,7 +214,7 @@ export default function FounderPlansSection() {
         </div>
 
         <p className="text-center text-xs font-semibold uppercase tracking-[0.18em] text-steel-light">
-          <span className="hidden md:inline">Selecciona un formato con hover, click o teclado</span>
+          <span className="hidden md:inline">Selecciona un formato con click, flechas o teclado</span>
           <span className="md:hidden">Desliza o toca una tarjeta para explorar formatos</span>
         </p>
 
